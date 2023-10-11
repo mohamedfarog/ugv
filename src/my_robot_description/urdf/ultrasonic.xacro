@@ -1,0 +1,1050 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+      <!-- define ultrasonic sensor link -->
+  <link name="base_laser_link_range">
+    <visual>
+      <origin xyz='0 0 0' rpy='0 0 0' />
+      <geometry>
+        <sphere radius='0.05' />
+      </geometry>
+      <material name='red'>
+        <color rgba='1 0 0 0.5' />
+      </material>
+    </visual>
+  </link>
+
+
+  <!-- define ultrasonic sensor joint -->
+  <joint name="range_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="base_laser_link_range"/>
+    <origin xyz="0.75 -0.35 0.45" rpy="0 0 0" />
+  </joint>
+ 
+  <!-- ultrasonic 0 gzebo -->
+
+<!-- dgeeel -->
+<gazebo reference="base_laser_link_range">
+<material>Gazebo/Red</material>
+    <sensor name="base_laser_link_range" type="ray">
+        <always_on>true</always_on>
+        <visualize>false</visualize>
+        <pose>0.0 0 0.0 0 0 0</pose>
+        <update_rate>50</update_rate>
+        <ray>
+            <scan>
+                <horizontal>
+                    <samples>5</samples>
+                    <resolution>1.0</resolution>
+                    <min_angle>-0.18</min_angle>
+                    <max_angle>0.18</max_angle>
+                </horizontal>
+                <vertical>
+                    <samples>5</samples>
+                    <resolution>1.0</resolution>
+                    <min_angle>-0.01</min_angle>
+                    <max_angle>0.01</max_angle>
+                </vertical>
+            </scan>
+            <range>
+                <min>0.02</min>
+                <max>8</max>
+                <resolution>0.01</resolution>
+            </range>
+            <noise>
+                <type>gaussian</type>
+                <mean>0.0</mean>
+                <stddev>0.01</stddev>
+            </noise>
+        </ray>
+        <plugin name="bytes_ultrasound" filename="libgazebo_ros_ray_sensor.so">
+            <ros>
+                <namespace>distance</namespace>
+                <argument>~/out:=range1</argument>
+            </ros>
+            <output_type>sensor_msgs/Range</output_type>
+            <radiation_type>ultrasound</radiation_type>
+            <frame_name>base_laser_link_range</frame_name>
+        </plugin>
+    </sensor>
+</gazebo>
+
+
+  <link name="base_laser_link_range1">
+    <visual>
+      <origin xyz='0 0 0' rpy='0 0 0' />
+      <geometry>
+        <sphere radius='0.05' />
+      </geometry>
+      <material name='red'>
+        <color rgba='1 0 0 0.5' />
+      </material>
+    </visual>
+  </link>
+
+
+  <!-- define ultrasonic sensor joint -->
+  <joint name="range1_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="base_laser_link_range1"/>
+    <origin xyz="0.75 0.35 0.45" rpy="0 0 0" />
+  </joint>
+
+  <gazebo reference="base_laser_link_range1">
+    <material>Gazebo/Red</material>
+        <sensor name="base_laser_link_range1" type="ray">
+            <always_on>true</always_on>
+            <visualize>false</visualize>
+            <pose>0.0 0 0.0 0 0 0</pose>
+            <update_rate>50</update_rate>
+            <ray>
+                <scan>
+                    <horizontal>
+                        <samples>5</samples>
+                        <resolution>1.0</resolution>
+                        <min_angle>-0.18</min_angle>
+                        <max_angle>0.18</max_angle>
+                    </horizontal>
+                    <vertical>
+                        <samples>5</samples>
+                        <resolution>1.0</resolution>
+                        <min_angle>-0.01</min_angle>
+                        <max_angle>0.01</max_angle>
+                    </vertical>
+                </scan>
+                <range>
+                    <min>0.02</min>
+                    <max>8</max>
+                    <resolution>0.01</resolution>
+                </range>
+                <noise>
+                    <type>gaussian</type>
+                    <mean>0.0</mean>
+                    <stddev>0.01</stddev>
+                </noise>
+            </ray>
+            <plugin name="bytes_ultrasound1" filename="libgazebo_ros_ray_sensor.so">
+                <ros>
+                    <namespace>distance</namespace>
+                    <argument>~/out:=range2</argument>
+                </ros>
+                <output_type>sensor_msgs/Range</output_type>
+                <radiation_type>ultrasound</radiation_type>
+                <frame_name>base_laser_link_range1</frame_name>
+            </plugin>
+        </sensor>
+    </gazebo>
+    
+
+
+  <link name="base_laser_link_range2">
+    <visual>
+      <origin xyz='0 0 0' rpy='0 0 0' />
+      <geometry>
+        <sphere radius='0.05' />
+      </geometry>
+      <material name='red'>
+        <color rgba='1 0 0 0.5' />
+      </material>
+    </visual>
+  </link>
+
+
+  <!-- define ultrasonic sensor joint -->
+  <joint name="range2_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="base_laser_link_range2"/>
+    <origin xyz="0.75 0.12 0.45" rpy="0 0 0" />
+  </joint>
+
+  <gazebo reference="base_laser_link_range2">
+    <material>Gazebo/Red</material>
+        <sensor name="base_laser_link_range2" type="ray">
+            <always_on>true</always_on>
+            <visualize>false</visualize>
+            <pose>0.0 0 0.0 0 0 0</pose>
+            <update_rate>50</update_rate>
+            <ray>
+                <scan>
+                    <horizontal>
+                        <samples>5</samples>
+                        <resolution>1.0</resolution>
+                        <min_angle>-0.18</min_angle>
+                        <max_angle>0.18</max_angle>
+                    </horizontal>
+                    <vertical>
+                        <samples>5</samples>
+                        <resolution>1.0</resolution>
+                        <min_angle>-0.01</min_angle>
+                        <max_angle>0.01</max_angle>
+                    </vertical>
+                </scan>
+                <range>
+                    <min>0.02</min>
+                    <max>8</max>
+                    <resolution>0.01</resolution>
+                </range>
+                <noise>
+                    <type>gaussian</type>
+                    <mean>0.0</mean>
+                    <stddev>0.01</stddev>
+                </noise>
+            </ray>
+            <plugin name="bytes_ultrasound2" filename="libgazebo_ros_ray_sensor.so">
+                <ros>
+                    <namespace>distance</namespace>
+                    <argument>~/out:=range3</argument>
+                </ros>
+                <output_type>sensor_msgs/Range</output_type>
+                <radiation_type>ultrasound</radiation_type>
+                <frame_name>base_laser_link_range2</frame_name>
+            </plugin>
+        </sensor>
+    </gazebo>
+
+
+  <link name="base_laser_link_range3">
+    <visual>
+      <origin xyz='0 0 0' rpy='0 0 0' />
+      <geometry>
+        <sphere radius='0.05' />
+      </geometry>
+      <material name='red'>
+        <color rgba='1 0 0 0.5' />
+      </material>
+    </visual>
+  </link>
+
+
+  <!-- define ultrasonic sensor joint -->
+  <joint name="range3_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="base_laser_link_range3"/>
+    <origin xyz="0.75 -0.12 0.45" rpy="0 0 0" />
+  </joint>
+
+  <gazebo reference="base_laser_link_range3">
+    <material>Gazebo/Red</material>
+        <sensor name="base_laser_link_range3" type="ray">
+            <always_on>true</always_on>
+            <visualize>false</visualize>
+            <pose>0.0 0 0.0 0 0 0</pose>
+            <update_rate>50</update_rate>
+            <ray>
+                <scan>
+                    <horizontal>
+                        <samples>5</samples>
+                        <resolution>1.0</resolution>
+                        <min_angle>-0.18</min_angle>
+                        <max_angle>0.18</max_angle>
+                    </horizontal>
+                    <vertical>
+                        <samples>5</samples>
+                        <resolution>1.0</resolution>
+                        <min_angle>-0.01</min_angle>
+                        <max_angle>0.01</max_angle>
+                    </vertical>
+                </scan>
+                <range>
+                    <min>0.02</min>
+                    <max>8</max>
+                    <resolution>0.01</resolution>
+                </range>
+                <noise>
+                    <type>gaussian</type>
+                    <mean>0.0</mean>
+                    <stddev>0.01</stddev>
+                </noise>
+            </ray>
+            <plugin name="bytes_ultrasound3" filename="libgazebo_ros_ray_sensor.so">
+                <ros>
+                    <namespace>distance</namespace>
+                    <argument>~/out:=range4</argument>
+                </ros>
+                <output_type>sensor_msgs/Range</output_type>
+                <radiation_type>ultrasound</radiation_type>
+                <frame_name>base_laser_link_range3</frame_name>
+            </plugin>
+        </sensor>
+    </gazebo>
+
+    <link name="base_laser_link_range4">
+        <visual>
+          <origin xyz='0 0 0' rpy='0 0 0' />
+          <geometry>
+            <sphere radius='0.05' />
+          </geometry>
+          <material name='red'>
+            <color rgba='1 0 0 0.5' />
+          </material>
+        </visual>
+      </link>
+    
+      <!-- define ultrasonic sensor joint -->
+      <joint name="range4_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="base_laser_link_range4"/>
+        <origin xyz="-0.98 -0.35 0.45" rpy="0 0 0" />
+      </joint>
+
+      <gazebo reference="base_laser_link_range4">
+        <material>Gazebo/Red</material>
+            <sensor name="base_laser_link_range4" type="ray">
+                <always_on>true</always_on>
+                <visualize>false</visualize>
+                <pose>0.0 0 0.0 0 0 0</pose>
+                <update_rate>50</update_rate>
+                <ray>
+                    <scan>
+                        <horizontal>
+                            <samples>5</samples>
+                            <resolution>1.0</resolution>
+                            <min_angle>-0.18</min_angle>
+                            <max_angle>0.18</max_angle>
+                        </horizontal>
+                        <vertical>
+                            <samples>5</samples>
+                            <resolution>1.0</resolution>
+                            <min_angle>-0.01</min_angle>
+                            <max_angle>0.01</max_angle>
+                        </vertical>
+                    </scan>
+                    <range>
+                        <min>0.02</min>
+                        <max>-8</max>
+                        <resolution>0.01</resolution>
+                    </range>
+                    <noise>
+                        <type>gaussian</type>
+                        <mean>0.0</mean>
+                        <stddev>0.01</stddev>
+                    </noise>
+                </ray>
+                <plugin name="bytes_ultrasound4" filename="libgazebo_ros_ray_sensor.so">
+                    <ros>
+                        <namespace>distance</namespace>
+                        <argument>~/out:=range5</argument>
+                    </ros>
+                    <output_type>sensor_msgs/Range</output_type>
+                    <radiation_type>ultrasound</radiation_type>
+                    <frame_name>base_laser_link_range4</frame_name>
+                </plugin>
+            </sensor>
+        </gazebo>
+
+
+      <link name="base_laser_link_range5">
+        <visual>
+          <origin xyz='0 0 0' rpy='0 0 0' />
+          <geometry>
+            <sphere radius='0.05' />
+          </geometry>
+          <material name='red'>
+            <color rgba='1 0 0 0.5' />
+          </material>
+        </visual>
+      </link>
+    
+      <!-- define ultrasonic sensor joint -->
+      <joint name="range5_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="base_laser_link_range5"/>
+        <origin xyz="-0.98 0.35 0.45" rpy="0 0 0" />
+      </joint>
+
+      <gazebo reference="base_laser_link_range5">
+        <material>Gazebo/Red</material>
+            <sensor name="base_laser_link_range5" type="ray">
+                <always_on>true</always_on>
+                <visualize>false</visualize>
+                <pose>0.0 0 0.0 0 0 0</pose>
+                <update_rate>50</update_rate>
+                <ray>
+                    <scan>
+                        <horizontal>
+                            <samples>5</samples>
+                            <resolution>1.0</resolution>
+                            <min_angle>-0.18</min_angle>
+                            <max_angle>0.18</max_angle>
+                        </horizontal>
+                        <vertical>
+                            <samples>5</samples>
+                            <resolution>1.0</resolution>
+                            <min_angle>-0.01</min_angle>
+                            <max_angle>0.01</max_angle>
+                        </vertical>
+                    </scan>
+                    <range>
+                        <min>0.02</min>
+                        <max>-8</max>
+                        <resolution>0.01</resolution>
+                    </range>
+                    <noise>
+                        <type>gaussian</type>
+                        <mean>0.0</mean>
+                        <stddev>0.01</stddev>
+                    </noise>
+                </ray>
+                <plugin name="bytes_ultrasound5" filename="libgazebo_ros_ray_sensor.so">
+                    <ros>
+                        <namespace>distance</namespace>
+                        <argument>~/out:=range6</argument>
+                    </ros>
+                    <output_type>sensor_msgs/Range</output_type>
+                    <radiation_type>ultrasound</radiation_type>
+                    <frame_name>base_laser_link_range5</frame_name>
+                </plugin>
+            </sensor>
+        </gazebo>
+    
+
+  <link name="base_laser_link_range6">
+    <visual>
+      <origin xyz='0 0 0' rpy='0 0 0' />
+      <geometry>
+        <sphere radius='0.05' />
+      </geometry>
+      <material name='red'>
+        <color rgba='1 0 0 0.5' />
+      </material>
+    </visual>
+  </link>
+
+
+  <!-- define ultrasonic sensor joint -->
+  <joint name="range6_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="base_laser_link_range6"/>
+    <origin xyz="-0.98 0.12 0.45" rpy="0 0 0" />
+  </joint>
+
+  <gazebo reference="base_laser_link_range6">
+    <material>Gazebo/Red</material>
+        <sensor name="base_laser_link_range6" type="ray">
+            <always_on>true</always_on>
+            <visualize>false</visualize>
+            <pose>0.0 0 0.0 0 0 0</pose>
+            <update_rate>50</update_rate>
+            <ray>
+                <scan>
+                    <horizontal>
+                        <samples>5</samples>
+                        <resolution>1.0</resolution>
+                        <min_angle>-0.18</min_angle>
+                        <max_angle>0.18</max_angle>
+                    </horizontal>
+                    <vertical>
+                        <samples>5</samples>
+                        <resolution>1.0</resolution>
+                        <min_angle>-0.01</min_angle>
+                        <max_angle>0.01</max_angle>
+                    </vertical>
+                </scan>
+                <range>
+                    <min>0.02</min>
+                    <max>-8</max>
+                    <resolution>0.01</resolution>
+                </range>
+                <noise>
+                    <type>gaussian</type>
+                    <mean>0.0</mean>
+                    <stddev>0.01</stddev>
+                </noise>
+            </ray>
+            <plugin name="bytes_ultrasound6" filename="libgazebo_ros_ray_sensor.so">
+                <ros>
+                    <namespace>distance</namespace>
+                    <argument>~/out:=range7</argument>
+                </ros>
+                <output_type>sensor_msgs/Range</output_type>
+                <radiation_type>ultrasound</radiation_type>
+                <frame_name>base_laser_link_range6</frame_name>
+            </plugin>
+        </sensor>
+    </gazebo>
+
+
+  <link name="base_laser_link_range7">
+    <visual>
+      <origin xyz='0 0 0' rpy='0 0 0' />
+      <geometry>
+        <sphere radius='0.05' />
+      </geometry>
+      <material name='red'>
+        <color rgba='1 0 0 0.5' />
+      </material>
+    </visual>
+  </link>
+
+  <!-- define ultrasonic sensor joint -->
+  <joint name="range7_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="base_laser_link_range7"/>
+    <origin xyz="-0.98 -0.12 0.45" rpy="0 0 0" />
+  </joint>
+
+  <gazebo reference="base_laser_link_range7">
+    <material>Gazebo/Red</material>
+        <sensor name="base_laser_link_range7" type="ray">
+            <always_on>true</always_on>
+            <visualize>false</visualize>
+            <pose>0.0 0 0.0 0 0 0</pose>
+            <update_rate>50</update_rate>
+            <ray>
+                <scan>
+                    <horizontal>
+                        <samples>5</samples>
+                        <resolution>1.0</resolution>
+                        <min_angle>-0.18</min_angle>
+                        <max_angle>0.18</max_angle>
+                    </horizontal>
+                    <vertical>
+                        <samples>5</samples>
+                        <resolution>1.0</resolution>
+                        <min_angle>-0.01</min_angle>
+                        <max_angle>0.01</max_angle>
+                    </vertical>
+                </scan>
+                <range>
+                    <min>0.02</min>
+                    <max>-8</max>
+                    <resolution>0.01</resolution>
+                </range>
+                <noise>
+                    <type>gaussian</type>
+                    <mean>0.0</mean>
+                    <stddev>0.01</stddev>
+                </noise>
+            </ray>
+            <plugin name="bytes_ultrasound7" filename="libgazebo_ros_ray_sensor.so">
+                <ros>
+                    <namespace>distance</namespace>
+                    <argument>~/out:=range8</argument>
+                </ros>
+                <output_type>sensor_msgs/Range</output_type>
+                <radiation_type>ultrasound</radiation_type>
+                <frame_name>base_laser_link_range7</frame_name>
+            </plugin>
+        </sensor>
+    </gazebo>
+
+    <link name="base_laser_link_range8">
+        <visual>
+          <origin xyz='0 0 0' rpy='0 0 0' />
+          <geometry>
+            <sphere radius='0.05' />
+          </geometry>
+          <material name='red'>
+            <color rgba='1 0 0 0.5' />
+          </material>
+        </visual>
+      </link>
+    
+      <!-- define ultrasonic sensor joint -->
+      <joint name="range8_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="base_laser_link_range8"/>
+        <origin xyz="0.35 -0.52 0.45" rpy="0 0 -1.5" />
+
+      </joint>
+
+      <gazebo reference="base_laser_link_range8">
+        <material>Gazebo/Red</material>
+            <sensor name="base_laser_link_range8" type="ray">
+                <always_on>true</always_on>
+                <visualize>false</visualize>
+                <pose>0.0 0 0.0 0 0 0</pose>
+                <update_rate>50</update_rate>
+                <ray>
+                    <scan>
+                        <horizontal>
+                            <samples>5</samples>
+                            <resolution>1.0</resolution>
+                            <min_angle>-0.18</min_angle>
+                            <max_angle>0.18</max_angle>
+                        </horizontal>
+                        <vertical>
+                            <samples>5</samples>
+                            <resolution>1.0</resolution>
+                            <min_angle>-0.01</min_angle>
+                            <max_angle>0.01</max_angle>
+                        </vertical>
+                    </scan>
+                    <range>
+                        <min>0.02</min>
+                        <max>10</max>
+                        <resolution>0.01</resolution>
+                    </range>
+                    <noise>
+                        <type>gaussian</type>
+                        <mean>0.0</mean>
+                        <stddev>0.01</stddev>
+                    </noise>
+                </ray>
+                <plugin name="bytes_ultrasound8" filename="libgazebo_ros_ray_sensor.so">
+                    <ros>
+                        <namespace>distance</namespace>
+                        <argument>~/out:=range9</argument>
+                    </ros>
+                    <output_type>sensor_msgs/Range</output_type>
+                    <radiation_type>ultrasound</radiation_type>
+                    <frame_name>base_laser_link_range8</frame_name>
+                </plugin>
+            </sensor>
+        </gazebo>
+
+
+      <link name="base_laser_link_range9">
+        <visual>
+          <origin xyz='0 0 0' rpy='0 0 0' />
+          <geometry>
+            <sphere radius='0.05' />
+          </geometry>
+          <material name='red'>
+            <color rgba='1 0 0 0.5' />
+          </material>
+        </visual>
+      </link>
+    
+      <!-- define ultrasonic sensor joint -->
+      <joint name="range9_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="base_laser_link_range9"/>
+        <origin xyz="0.05 -0.52 0.45" rpy="0 0 -1.5" />
+      </joint>
+
+      <gazebo reference="base_laser_link_range9">
+        <material>Gazebo/Red</material>
+            <sensor name="base_laser_link_range9" type="ray">
+                <always_on>true</always_on>
+                <visualize>false</visualize>
+                <pose>0.0 0 0.0 0 0 0</pose>
+                <update_rate>50</update_rate>
+                <ray>
+                    <scan>
+                        <horizontal>
+                            <samples>5</samples>
+                            <resolution>1.0</resolution>
+                            <min_angle>-0.18</min_angle>
+                            <max_angle>0.18</max_angle>
+                        </horizontal>
+                        <vertical>
+                            <samples>5</samples>
+                            <resolution>1.0</resolution>
+                            <min_angle>-0.01</min_angle>
+                            <max_angle>0.01</max_angle>
+                        </vertical>
+                    </scan>
+                    <range>
+                        <min>0.02</min>
+                        <max>10</max>
+                        <resolution>0.01</resolution>
+                    </range>
+                    <noise>
+                        <type>gaussian</type>
+                        <mean>0.0</mean>
+                        <stddev>0.01</stddev>
+                    </noise>
+                </ray>
+                <plugin name="bytes_ultrasound9" filename="libgazebo_ros_ray_sensor.so">
+                    <ros>
+                        <namespace>distance</namespace>
+                        <argument>~/out:=range10</argument>
+                    </ros>
+                    <output_type>sensor_msgs/Range</output_type>
+                    <radiation_type>ultrasound</radiation_type>
+                    <frame_name>base_laser_link_range9</frame_name>
+                </plugin>
+            </sensor>
+        </gazebo>
+
+      <link name="base_laser_link_range10">
+        <visual>
+          <origin xyz='0 0 0' rpy='0 0 0' />
+          <geometry>
+            <sphere radius='0.05' />
+          </geometry>
+          <material name='red'>
+            <color rgba='1 0 0 0.5' />
+          </material>
+        </visual>
+      </link>
+    
+      <!-- define ultrasonic sensor joint -->
+      <joint name="range10_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="base_laser_link_range10"/>
+        <origin xyz="-0.30 -0.52 0.45" rpy="0 0 1.5" />
+      </joint>
+
+      <gazebo reference="base_laser_link_range10">
+        <material>Gazebo/Red</material>
+            <sensor name="base_laser_link_range10" type="ray">
+                <always_on>true</always_on>
+                <visualize>false</visualize>
+                <pose>0.0 0 0.0 0 0 0</pose>
+                <update_rate>50</update_rate>
+                <ray>
+                    <scan>
+                        <horizontal>
+                            <samples>5</samples>
+                            <resolution>1.0</resolution>
+                            <min_angle>-0.18</min_angle>
+                            <max_angle>0.18</max_angle>
+                        </horizontal>
+                        <vertical>
+                            <samples>5</samples>
+                            <resolution>1.0</resolution>
+                            <min_angle>-0.01</min_angle>
+                            <max_angle>0.01</max_angle>
+                        </vertical>
+                    </scan>
+                    <range>
+                        <min>0.02</min>
+                        <max>10</max>
+                        <resolution>0.01</resolution>
+                    </range>
+                    <noise>
+                        <type>gaussian</type>
+                        <mean>0.0</mean>
+                        <stddev>0.01</stddev>
+                    </noise>
+                </ray>
+                <plugin name="bytes_ultrasound10" filename="libgazebo_ros_ray_sensor.so">
+                    <ros>
+                        <namespace>distance</namespace>
+                        <argument>~/out:=range11</argument>
+                    </ros>
+                    <output_type>sensor_msgs/Range</output_type>
+                    <radiation_type>ultrasound</radiation_type>
+                    <frame_name>base_laser_link_range10</frame_name>
+                </plugin>
+            </sensor>
+        </gazebo>
+
+      <link name="base_laser_link_range11">
+        <visual>
+          <origin xyz='0 0 0' rpy='0 0 0' />
+          <geometry>
+            <sphere radius='0.05' />
+          </geometry>
+          <material name='red'>
+            <color rgba='1 0 0 0.5' />
+          </material>
+        </visual>
+      </link>
+    
+      <!-- define ultrasonic sensor joint -->
+      <joint name="range11_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="base_laser_link_range11"/>
+        <origin xyz="-0.65 -0.52 0.45" rpy="0 0 -1.5" />
+      </joint>
+
+      <gazebo reference="base_laser_link_range11">
+        <material>Gazebo/Red</material>
+            <sensor name="base_laser_link_range11" type="ray">
+                <always_on>true</always_on>
+                <visualize>false</visualize>
+                <pose>0.0 0 0.0 0 0 0</pose>
+                <update_rate>50</update_rate>
+                <ray>
+                    <scan>
+                        <horizontal>
+                            <samples>5</samples>
+                            <resolution>1.0</resolution>
+                            <min_angle>-0.18</min_angle>
+                            <max_angle>0.18</max_angle>
+                        </horizontal>
+                        <vertical>
+                            <samples>5</samples>
+                            <resolution>1.0</resolution>
+                            <min_angle>-0.01</min_angle>
+                            <max_angle>0.01</max_angle>
+                        </vertical>
+                    </scan>
+                    <range>
+                        <min>0.02</min>
+                        <max>10</max>
+                        <resolution>0.01</resolution>
+                    </range>
+                    <noise>
+                        <type>gaussian</type>
+                        <mean>0.0</mean>
+                        <stddev>0.01</stddev>
+                    </noise>
+                </ray>
+                <plugin name="bytes_ultrasound11" filename="libgazebo_ros_ray_sensor.so">
+                    <ros>
+                        <namespace>distance</namespace>
+                        <argument>~/out:=range12</argument>
+                    </ros>
+                    <output_type>sensor_msgs/Range</output_type>
+                    <radiation_type>ultrasound</radiation_type>
+                    <frame_name>base_laser_link_range11</frame_name>
+                </plugin>
+            </sensor>
+        </gazebo>
+
+      <!-- dgeeeeeeeeeeel -->
+      <link name="base_laser_link_range12">
+        <visual>
+          <origin xyz='0 0 0' rpy='0 0 0' />
+          <geometry>
+            <sphere radius='0.05' />
+          </geometry>
+          <material name='red'>
+            <color rgba='1 0 0 0.5' />
+          </material>
+        </visual>
+      </link>
+    
+      <!-- define ultrasonic sensor joint -->
+      <joint name="range12_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="base_laser_link_range12"/>
+        <origin xyz="0.35 0.52 0.45" rpy="0 0 1.5" />
+      </joint>
+
+      <gazebo reference="base_laser_link_range12">
+        <material>Gazebo/Red</material>
+            <sensor name="base_laser_link_range12" type="ray">
+                <always_on>true</always_on>
+                <visualize>false</visualize>
+                <pose>0.0 0 0.0 0 0 0</pose>
+                <update_rate>50</update_rate>
+                <ray>
+                    <scan>
+                        <horizontal>
+                            <samples>5</samples>
+                            <resolution>1.0</resolution>
+                            <min_angle>-0.18</min_angle>
+                            <max_angle>0.18</max_angle>
+                        </horizontal>
+                        <vertical>
+                            <samples>5</samples>
+                            <resolution>1.0</resolution>
+                            <min_angle>-0.01</min_angle>
+                            <max_angle>0.01</max_angle>
+                        </vertical>
+                    </scan>
+                    <range>
+                        <min>0.02</min>
+                        <max>10</max>
+                        <resolution>0.01</resolution>
+                    </range>
+                    <noise>
+                        <type>gaussian</type>
+                        <mean>0.0</mean>
+                        <stddev>0.01</stddev>
+                    </noise>
+                </ray>
+                <plugin name="bytes_ultrasound12" filename="libgazebo_ros_ray_sensor.so">
+                    <ros>
+                        <namespace>distance</namespace>
+                        <argument>~/out:=range13</argument>
+                    </ros>
+                    <output_type>sensor_msgs/Range</output_type>
+                    <radiation_type>ultrasound</radiation_type>
+                    <frame_name>base_laser_link_range12</frame_name>
+                </plugin>
+            </sensor>
+        </gazebo>
+
+      <link name="base_laser_link_range13">
+        <visual>
+          <origin xyz='0 0 0' rpy='0 0 0' />
+          <geometry>
+            <sphere radius='0.05' />
+          </geometry>
+          <material name='red'>
+            <color rgba='1 0 0 0.5' />
+          </material>
+        </visual>
+      </link>
+    
+      <!-- define ultrasonic sensor joint -->
+      <joint name="range13_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="base_laser_link_range13"/>
+        <origin xyz="0.05 0.52 0.45" rpy="0 0 1.5" />
+      </joint>
+
+      <gazebo reference="base_laser_link_range13">
+        <material>Gazebo/Red</material>
+            <sensor name="base_laser_link_range13" type="ray">
+                <always_on>true</always_on>
+                <visualize>false</visualize>
+
+
+                <pose>0.0 0 0.0 0 0 0</pose>
+                <update_rate>50</update_rate>
+                <ray>
+                    <scan>
+                        <horizontal>
+                            <samples>5</samples>
+                            <resolution>1.0</resolution>
+                            <min_angle>-0.18</min_angle>
+                            <max_angle>0.18</max_angle>
+                        </horizontal>
+                        <vertical>
+                            <samples>5</samples>
+                            <resolution>1.0</resolution>
+                            <min_angle>-0.01</min_angle>
+                            <max_angle>0.01</max_angle>
+                        </vertical>
+                    </scan>
+                    <range>
+                        <min>0.02</min>
+                        <max>10</max>
+                        <resolution>0.01</resolution>
+                    </range>
+                    <noise>
+                        <type>gaussian</type>
+                        <mean>0.0</mean>
+                        <stddev>0.01</stddev>
+                    </noise>
+                </ray>
+                <plugin name="bytes_ultrasound13" filename="libgazebo_ros_ray_sensor.so">
+                    <ros>
+                        <namespace>distance</namespace>
+                        <argument>~/out:=range14</argument>
+                    </ros>
+                    <output_type>sensor_msgs/Range</output_type>
+                    <radiation_type>ultrasound</radiation_type>
+                    <frame_name>base_laser_link_range13</frame_name>
+                </plugin>
+            </sensor>
+        </gazebo>
+
+
+      <link name="base_laser_link_range14">
+        <visual>
+          <origin xyz='0 0 0' rpy='0 0 0' />
+          <geometry>
+            <sphere radius='0.05' />
+          </geometry>
+          <material name='red'>
+            <color rgba='1 0 0 0.5' />
+          </material>
+        </visual>
+      </link>
+    
+      <!-- define ultrasonic sensor joint -->
+      <joint name="range14_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="base_laser_link_range14"/>
+        <origin xyz="-0.30 0.52 0.45" rpy="0 0 1.5" />
+      </joint>
+
+      <gazebo reference="base_laser_link_range14">
+        <material>Gazebo/Red</material>
+            <sensor name="base_laser_link_range14" type="ray">
+                <always_on>true</always_on>
+                <visualize>false</visualize>
+                <pose>0.0 0 0.0 0 0 0</pose>
+                <update_rate>50</update_rate>
+                <ray>
+                    <scan>
+                        <horizontal>
+                            <samples>5</samples>
+                            <resolution>1.0</resolution>
+                            <min_angle>-0.18</min_angle>
+                            <max_angle>0.18</max_angle>
+                        </horizontal>
+                        <vertical>
+                            <samples>5</samples>
+                            <resolution>1.0</resolution>
+                            <min_angle>-0.01</min_angle>
+                            <max_angle>0.01</max_angle>
+                        </vertical>
+                    </scan>
+                    <range>
+                        <min>0.02</min>
+                        <max>10</max>
+                        <resolution>0.01</resolution>
+                    </range>
+                    <noise>
+                        <type>gaussian</type>
+                        <mean>0.0</mean>
+                        <stddev>0.01</stddev>
+                    </noise>
+                </ray>
+                <plugin name="bytes_ultrasound14" filename="libgazebo_ros_ray_sensor.so">
+                    <ros>
+                        <namespace>distance</namespace>
+                        <argument>~/out:=range15</argument>
+                    </ros>
+                    <output_type>sensor_msgs/Range</output_type>
+                    <radiation_type>ultrasound</radiation_type>
+                    <frame_name>base_laser_link_range14</frame_name>
+                </plugin>
+            </sensor>
+        </gazebo>
+
+      <link name="base_laser_link_range15">
+        <visual>
+          <origin xyz='0 0 0' rpy='0 0 0' />
+          <geometry>
+            <sphere radius='0.05' />
+          </geometry>
+          <material name='red'>
+            <color rgba='1 0 0 0.5' />
+          </material>
+        </visual>
+      </link>
+    
+      <!-- define ultrasonic sensor joint -->
+      <joint name="range15_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="base_laser_link_range15"/>
+        <origin xyz="-0.65 0.52 0.45" rpy="0 0 1.5" />
+      </joint>
+    
+      <gazebo reference="base_laser_link_range15">
+        <material>Gazebo/Red</material>
+            <sensor name="base_laser_link_range15" type="ray">
+                <always_on>true</always_on>
+                <visualize>false</visualize>
+                <pose>0.0 0 0.0 0 0 0</pose>
+                <update_rate>50</update_rate>
+                <ray>
+                    <scan>
+                        <horizontal>
+                            <samples>5</samples>
+                            <resolution>1.0</resolution>
+                            <min_angle>-0.18</min_angle>
+                            <max_angle>0.18</max_angle>
+                        </horizontal>
+                        <vertical>
+                            <samples>5</samples>
+                            <resolution>1.0</resolution>
+                            <min_angle>-0.01</min_angle>
+                            <max_angle>0.01</max_angle>
+                        </vertical>
+                    </scan>
+                    <range>
+                        <min>0.02</min>
+                        <max>10</max>
+                        <resolution>0.01</resolution>
+                    </range>
+                    <noise>
+                        <type>gaussian</type>
+                        <mean>0.0</mean>
+                        <stddev>0.01</stddev>
+                    </noise>
+                </ray>
+                <plugin name="bytes_ultrasound15" filename="libgazebo_ros_ray_sensor.so">
+                    <ros>
+                        <namespace>distance</namespace>
+                        <argument>~/out:=range16</argument>
+                    </ros>
+                    <output_type>sensor_msgs/Range</output_type>
+                    <radiation_type>ultrasound</radiation_type>
+                    <frame_name>base_laser_link_range15</frame_name>
+                </plugin>
+            </sensor>
+        </gazebo>
+</robot>

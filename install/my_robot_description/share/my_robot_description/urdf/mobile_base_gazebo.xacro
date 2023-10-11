@@ -5,18 +5,38 @@
     </gazebo> -->
     <gazebo reference="right_wheel_link">
         <material>Gazebo/Black</material>
+        <mu1 value="2.0"/> 
+    <mu2 value="2.0"/> 
+    <kp  value="10000000.0" /> 
+    <kd  value="1.0" /> 
+    <fdir1 value="0 1 0"/> 
     </gazebo>
 
     <gazebo reference="left_wheel_link">
         <material>Gazebo/Black</material>
+        <mu1 value="2.0"/> 
+    <mu2 value="2.0"/> 
+    <kp  value="10000000.0" /> 
+    <kd  value="1.0" /> 
+    <fdir1 value="0 1 0"/> 
     </gazebo>
 
      <gazebo reference="back_right_wheel_link">
         <material>Gazebo/Black</material>
+        <mu1 value="2.0"/> 
+        <mu2 value="2.0"/> 
+        <kp  value="10000000.0" /> 
+        <kd  value="1.0" /> 
+        <fdir1 value="0 1 0"/> 
     </gazebo>
 
      <gazebo reference="back_left_wheel_link">
         <material>Gazebo/Black</material>
+        <mu1 value="2.0"/> 
+    <mu2 value="2.0"/> 
+    <kp  value="10000000.0" /> 
+    <kd  value="1.0" /> 
+    <fdir1 value="0 1 0"/> 
     </gazebo>
 
 
@@ -28,7 +48,7 @@
             <right_joint>base_left_wheel_joint</right_joint>
             <!-- <left_joint>base_back_right_wheel_joint</left_joint>
             <right_joint>base_back_left_wheel_joint</right_joint>
-   --> 
+    -->
             <wheel_separation>0.60</wheel_separation>
             <wheel_diameter>0.2</wheel_diameter>
 

@@ -1,0 +1,8 @@
+In file included from [01m[K/home/farog/ros2_ws/src/my_robot_description/src/ObstacleAvoider.cpp:1[m[K:
+[01m[K/home/farog/ros2_ws/src/my_robot_description/src/ObstacleAvoider.hpp:3:10:[m[K [01;31m[Kfatal error: [m[Kgeometry_msgs/msg/twist.hpp: No such file or directory
+    3 | #include [01;31m[K"geometry_msgs/msg/twist.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/obstacle_avoider.dir/build.make:76: CMakeFiles/obstacle_avoider.dir/src/ObstacleAvoider.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/obstacle_avoider.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

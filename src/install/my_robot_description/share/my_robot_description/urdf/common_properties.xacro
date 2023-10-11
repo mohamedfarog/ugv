@@ -8,6 +8,14 @@
         <material name="black">
         <color rgba="0 0 0 1" />
     </material>
+    
+     <material name="blue">
+        <color rgba="0 0 0.5 1" />
+    </material>
+
+    <material name="red">
+        <color rgba="1 0 0 1" />
+    </material>
 
         <xacro:macro name="body_inertia" params="m l w h xyz rpy">
         <inertial>
