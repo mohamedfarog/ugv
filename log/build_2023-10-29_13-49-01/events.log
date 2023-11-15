@@ -1,0 +1,436 @@
+[0.000000] (-) TimerEvent: {}
+[0.000216] (car_gazebo_plugin) JobQueued: {'identifier': 'car_gazebo_plugin', 'dependencies': OrderedDict()}
+[0.000276] (my_robot_description) JobQueued: {'identifier': 'my_robot_description', 'dependencies': OrderedDict()}
+[0.000287] (my_robot_bringup) JobQueued: {'identifier': 'my_robot_bringup', 'dependencies': OrderedDict([('my_robot_description', '/home/farog/ros2_ws/install/my_robot_description')])}
+[0.000297] (my_robot_description) JobStarted: {'identifier': 'my_robot_description'}
+[0.037414] (car_gazebo_plugin) JobStarted: {'identifier': 'car_gazebo_plugin'}
+[0.074745] (my_robot_description) JobProgress: {'identifier': 'my_robot_description', 'progress': 'cmake'}
+[0.076373] (my_robot_description) JobProgress: {'identifier': 'my_robot_description', 'progress': 'build'}
+[0.076705] (my_robot_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/farog/ros2_ws/build/my_robot_description', '--', '-j20', '-l20'], 'cwd': '/home/farog/ros2_ws/build/my_robot_description', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'farog'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/farog'), ('OLDPWD', '/home/farog/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '2081'), ('SYSTEMD_EXEC_PID', '2490'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3266'), ('COLCON_PREFIX_PATH', '/home/farog/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'farog'), ('JOURNAL_STREAM', '8:17149'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'farog'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/farog/ros2_ws/src/my_robot_description/meshes/:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/farog/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/nbc135:@/tmp/.ICE-unix/2471,unix/nbc135:/tmp/.ICE-unix/2471'), ('INVOCATION_ID', '852b56b31e154440bc3cf4f96b6d61d3'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/farog/ros2_ws/install/turtlebot3_simulations:/home/farog/ros2_ws/install/turtlebot3_gazebo:/home/farog/ros2_ws/install/turtlebot3_fake_node:/home/farog/ros2_ws/install/my_robot_bringup:/home/farog/ros2_ws/install/my_robot_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:4862148a-470b-4abe-acdd-4448ec659c3f'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/farog/ros2_ws/build/my_robot_description'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/farog/ros2_ws/install/turtlebot3_simulations:/home/farog/ros2_ws/install/turtlebot3_gazebo:/home/farog/ros2_ws/install/turtlebot3_fake_node:/home/farog/ros2_ws/install/my_robot_bringup:/home/farog/ros2_ws/install/my_robot_description:/opt/ros/humble')]), 'shell': False}
+[0.142740] (-) TimerEvent: {}
+[0.144926] (car_gazebo_plugin) JobProgress: {'identifier': 'car_gazebo_plugin', 'progress': 'cmake'}
+[0.145460] (car_gazebo_plugin) Command: {'cmd': ['/usr/bin/cmake', '/home/farog/ros2_ws/src/car_gazebo_plugin', '-DCMAKE_INSTALL_PREFIX=/home/farog/ros2_ws/install/car_gazebo_plugin'], 'cwd': '/home/farog/ros2_ws/build/car_gazebo_plugin', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'farog'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/farog'), ('OLDPWD', '/home/farog/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '2081'), ('SYSTEMD_EXEC_PID', '2490'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3266'), ('COLCON_PREFIX_PATH', '/home/farog/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'farog'), ('JOURNAL_STREAM', '8:17149'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'farog'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/farog/ros2_ws/src/my_robot_description/meshes/:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/farog/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/nbc135:@/tmp/.ICE-unix/2471,unix/nbc135:/tmp/.ICE-unix/2471'), ('INVOCATION_ID', '852b56b31e154440bc3cf4f96b6d61d3'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/farog/ros2_ws/install/turtlebot3_simulations:/home/farog/ros2_ws/install/turtlebot3_gazebo:/home/farog/ros2_ws/install/turtlebot3_fake_node:/home/farog/ros2_ws/install/my_robot_bringup:/home/farog/ros2_ws/install/my_robot_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:4862148a-470b-4abe-acdd-4448ec659c3f'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/farog/ros2_ws/build/car_gazebo_plugin'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/farog/ros2_ws/install/turtlebot3_simulations:/home/farog/ros2_ws/install/turtlebot3_gazebo:/home/farog/ros2_ws/install/turtlebot3_fake_node:/home/farog/ros2_ws/install/my_robot_bringup:/home/farog/ros2_ws/install/my_robot_description:/opt/ros/humble')]), 'shell': False}
+[0.242834] (-) TimerEvent: {}
+[0.267442] (my_robot_description) CommandEnded: {'returncode': 0}
+[0.281052] (my_robot_description) JobProgress: {'identifier': 'my_robot_description', 'progress': 'install'}
+[0.285872] (my_robot_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/farog/ros2_ws/build/my_robot_description'], 'cwd': '/home/farog/ros2_ws/build/my_robot_description', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'farog'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/farog'), ('OLDPWD', '/home/farog/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '2081'), ('SYSTEMD_EXEC_PID', '2490'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3266'), ('COLCON_PREFIX_PATH', '/home/farog/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'farog'), ('JOURNAL_STREAM', '8:17149'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'farog'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/farog/ros2_ws/src/my_robot_description/meshes/:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/farog/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/nbc135:@/tmp/.ICE-unix/2471,unix/nbc135:/tmp/.ICE-unix/2471'), ('INVOCATION_ID', '852b56b31e154440bc3cf4f96b6d61d3'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/farog/ros2_ws/install/turtlebot3_simulations:/home/farog/ros2_ws/install/turtlebot3_gazebo:/home/farog/ros2_ws/install/turtlebot3_fake_node:/home/farog/ros2_ws/install/my_robot_bringup:/home/farog/ros2_ws/install/my_robot_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:4862148a-470b-4abe-acdd-4448ec659c3f'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/farog/ros2_ws/build/my_robot_description'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/farog/ros2_ws/install/turtlebot3_simulations:/home/farog/ros2_ws/install/turtlebot3_gazebo:/home/farog/ros2_ws/install/turtlebot3_fake_node:/home/farog/ros2_ws/install/my_robot_bringup:/home/farog/ros2_ws/install/my_robot_description:/opt/ros/humble')]), 'shell': False}
+[0.291402] (my_robot_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.291505] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//urdf\n'}
+[0.291539] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//urdf/common_properties.xacro\n'}
+[0.291567] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//urdf/test.urdf.xacro\n'}
+[0.291594] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//urdf/ultrasonic.xacro\n'}
+[0.291620] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//urdf/ackermann_controller.xacro\n'}
+[0.291647] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//urdf/mobile_base_gazebo.xacro\n'}
+[0.291673] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//urdf/ugv.urdf\n'}
+[0.291698] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//urdf/camera.xacro\n'}
+[0.291735] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//urdf/lidar.xacro\n'}
+[0.291803] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//urdf/ugv.urdf.xacro\n'}
+[0.291945] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//urdf/ros2_control.xacro\n'}
+[0.291986] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//launch\n'}
+[0.292012] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//launch/display.launch.xml\n'}
+[0.292042] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//launch/mapping.launch.py\n'}
+[0.292070] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//meshes\n'}
+[0.292094] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//meshes/wheel1.dae\n'}
+[0.292120] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//meshes/body.dae\n'}
+[0.292144] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//meshes/body1.dae\n'}
+[0.292166] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//meshes/model.dae\n'}
+[0.292191] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//rviz\n'}
+[0.292217] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//rviz/urdf_config.rviz\n'}
+[0.292241] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//config\n'}
+[0.292263] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//config/map_server_params.yaml\n'}
+[0.292286] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//config/gaz_ros2_ctl_use_sim.yaml\n'}
+[0.292314] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//config/diff_drive_controller.yaml\n'}
+[0.292338] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//config/ackermann_controll.yaml\n'}
+[0.292365] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//config/mapper_params_online_async.yaml\n'}
+[0.292391] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/ament_index/resource_index/package_run_dependencies/my_robot_description\n'}
+[0.292418] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/ament_index/resource_index/parent_prefix_path/my_robot_description\n'}
+[0.292444] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description/environment/ament_prefix_path.sh\n'}
+[0.292468] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description/environment/ament_prefix_path.dsv\n'}
+[0.292495] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description/environment/path.sh\n'}
+[0.292518] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description/environment/path.dsv\n'}
+[0.292541] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description/local_setup.bash\n'}
+[0.292563] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description/local_setup.sh\n'}
+[0.292585] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description/local_setup.zsh\n'}
+[0.292617] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description/local_setup.dsv\n'}
+[0.292640] (my_robot_description) StdoutLine: {'line': b'-- Installing: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description/package.dsv\n'}
+[0.292728] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/ament_index/resource_index/packages/my_robot_description\n'}
+[0.292764] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description/cmake/my_robot_descriptionConfig.cmake\n'}
+[0.292804] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description/cmake/my_robot_descriptionConfig-version.cmake\n'}
+[0.292829] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description/package.xml\n'}
+[0.294054] (my_robot_description) CommandEnded: {'returncode': 0}
+[0.342897] (-) TimerEvent: {}
+[0.384965] (my_robot_description) JobEnded: {'identifier': 'my_robot_description', 'rc': 0}
+[0.385683] (my_robot_bringup) JobStarted: {'identifier': 'my_robot_bringup'}
+[0.421523] (my_robot_bringup) JobProgress: {'identifier': 'my_robot_bringup', 'progress': 'cmake'}
+[0.423145] (my_robot_bringup) JobProgress: {'identifier': 'my_robot_bringup', 'progress': 'build'}
+[0.423259] (my_robot_bringup) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/farog/ros2_ws/build/my_robot_bringup', '--', '-j20', '-l20'], 'cwd': '/home/farog/ros2_ws/build/my_robot_bringup', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'farog'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/farog'), ('OLDPWD', '/home/farog/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '2081'), ('SYSTEMD_EXEC_PID', '2490'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3266'), ('COLCON_PREFIX_PATH', '/home/farog/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'farog'), ('JOURNAL_STREAM', '8:17149'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'farog'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/farog/ros2_ws/src/my_robot_description/meshes/:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/farog/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/nbc135:@/tmp/.ICE-unix/2471,unix/nbc135:/tmp/.ICE-unix/2471'), ('INVOCATION_ID', '852b56b31e154440bc3cf4f96b6d61d3'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/farog/ros2_ws/install/turtlebot3_simulations:/home/farog/ros2_ws/install/turtlebot3_gazebo:/home/farog/ros2_ws/install/turtlebot3_fake_node:/home/farog/ros2_ws/install/my_robot_bringup:/home/farog/ros2_ws/install/my_robot_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:4862148a-470b-4abe-acdd-4448ec659c3f'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/farog/ros2_ws/build/my_robot_bringup'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/farog/ros2_ws/install/my_robot_description:/home/farog/ros2_ws/install/turtlebot3_simulations:/home/farog/ros2_ws/install/turtlebot3_gazebo:/home/farog/ros2_ws/install/turtlebot3_fake_node:/home/farog/ros2_ws/install/my_robot_bringup:/opt/ros/humble')]), 'shell': False}
+[0.442997] (-) TimerEvent: {}
+[0.445158] (my_robot_bringup) CommandEnded: {'returncode': 0}
+[0.456312] (my_robot_bringup) JobProgress: {'identifier': 'my_robot_bringup', 'progress': 'install'}
+[0.456436] (my_robot_bringup) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/farog/ros2_ws/build/my_robot_bringup'], 'cwd': '/home/farog/ros2_ws/build/my_robot_bringup', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'farog'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/farog'), ('OLDPWD', '/home/farog/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '2081'), ('SYSTEMD_EXEC_PID', '2490'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3266'), ('COLCON_PREFIX_PATH', '/home/farog/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'farog'), ('JOURNAL_STREAM', '8:17149'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'farog'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/farog/ros2_ws/src/my_robot_description/meshes/:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/farog/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/nbc135:@/tmp/.ICE-unix/2471,unix/nbc135:/tmp/.ICE-unix/2471'), ('INVOCATION_ID', '852b56b31e154440bc3cf4f96b6d61d3'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/farog/ros2_ws/install/turtlebot3_simulations:/home/farog/ros2_ws/install/turtlebot3_gazebo:/home/farog/ros2_ws/install/turtlebot3_fake_node:/home/farog/ros2_ws/install/my_robot_bringup:/home/farog/ros2_ws/install/my_robot_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:4862148a-470b-4abe-acdd-4448ec659c3f'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/farog/ros2_ws/build/my_robot_bringup'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/farog/ros2_ws/install/my_robot_description:/home/farog/ros2_ws/install/turtlebot3_simulations:/home/farog/ros2_ws/install/turtlebot3_gazebo:/home/farog/ros2_ws/install/turtlebot3_fake_node:/home/farog/ros2_ws/install/my_robot_bringup:/opt/ros/humble')]), 'shell': False}
+[0.462232] (my_robot_bringup) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.462339] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_bringup/share/my_robot_bringup//launch\n'}
+[0.462374] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_bringup/share/my_robot_bringup//launch/my_robot_gazebo.launch.xml\n'}
+[0.462403] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_bringup/share/my_robot_bringup//rviz\n'}
+[0.462430] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_bringup/share/my_robot_bringup//rviz/urdf_config.rviz\n'}
+[0.462458] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_bringup/share/my_robot_bringup//worlds\n'}
+[0.462496] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_bringup/share/my_robot_bringup//worlds/house.world\n'}
+[0.462553] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_bringup/share/my_robot_bringup//worlds/desert.world\n'}
+[0.462579] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_bringup/share/my_robot_bringup//worlds/my_world.world\n'}
+[0.462603] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_bringup/share/ament_index/resource_index/package_run_dependencies/my_robot_bringup\n'}
+[0.462631] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_bringup/share/ament_index/resource_index/parent_prefix_path/my_robot_bringup\n'}
+[0.462665] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/environment/ament_prefix_path.sh\n'}
+[0.462690] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/environment/ament_prefix_path.dsv\n'}
+[0.462716] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/environment/path.sh\n'}
+[0.462744] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/environment/path.dsv\n'}
+[0.462770] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/local_setup.bash\n'}
+[0.462796] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/local_setup.sh\n'}
+[0.462820] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/local_setup.zsh\n'}
+[0.462843] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/local_setup.dsv\n'}
+[0.462866] (my_robot_bringup) StdoutLine: {'line': b'-- Installing: /home/farog/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/package.dsv\n'}
+[0.463477] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_bringup/share/ament_index/resource_index/packages/my_robot_bringup\n'}
+[0.463526] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/cmake/my_robot_bringupConfig.cmake\n'}
+[0.463552] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/cmake/my_robot_bringupConfig-version.cmake\n'}
+[0.463576] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/package.xml\n'}
+[0.464880] (my_robot_bringup) CommandEnded: {'returncode': 0}
+[0.541820] (my_robot_bringup) JobEnded: {'identifier': 'my_robot_bringup', 'rc': 0}
+[0.543070] (-) TimerEvent: {}
+[0.643253] (-) TimerEvent: {}
+[0.743504] (-) TimerEvent: {}
+[0.794053] (car_gazebo_plugin) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.843632] (-) TimerEvent: {}
+[0.944100] (-) TimerEvent: {}
+[1.044363] (-) TimerEvent: {}
+[1.144574] (-) TimerEvent: {}
+[1.154446] (car_gazebo_plugin) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.178776] (car_gazebo_plugin) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.244719] (-) TimerEvent: {}
+[1.286315] (car_gazebo_plugin) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.293370] (car_gazebo_plugin) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.294164] (car_gazebo_plugin) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.294929] (car_gazebo_plugin) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.300503] (car_gazebo_plugin) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.344833] (-) TimerEvent: {}
+[1.426955] (car_gazebo_plugin) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.434653] (car_gazebo_plugin) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.434885] (car_gazebo_plugin) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.435262] (car_gazebo_plugin) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.444894] (-) TimerEvent: {}
+[1.486317] (car_gazebo_plugin) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[1.486820] (car_gazebo_plugin) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (PkgConfig)\n'}
+[1.487059] (car_gazebo_plugin) StderrLine: {'line': b'  does not match the name of the calling package (gazebo).  This can lead to\n'}
+[1.487230] (car_gazebo_plugin) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[1.487392] (car_gazebo_plugin) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[1.487549] (car_gazebo_plugin) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.487708] (car_gazebo_plugin) StderrLine: {'line': b'  /usr/share/cmake-3.22/Modules/FindPkgConfig.cmake:99 (find_package_handle_standard_args)\n'}
+[1.487939] (car_gazebo_plugin) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:72 (include)\n'}
+[1.488108] (car_gazebo_plugin) StderrLine: {'line': b'  CMakeLists.txt:8 (find_package)\n'}
+[1.488237] (car_gazebo_plugin) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.488369] (car_gazebo_plugin) StderrLine: {'line': b'\x1b[0m\n'}
+[1.488695] (car_gazebo_plugin) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[1.498700] (car_gazebo_plugin) StdoutLine: {'line': b"-- Checking for module 'bullet>=2.82'\n"}
+[1.516803] (car_gazebo_plugin) StdoutLine: {'line': b'--   Found bullet, version 3.05\n'}
+[1.545007] (-) TimerEvent: {}
+[1.615878] (car_gazebo_plugin) StdoutLine: {'line': b'-- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") \n'}
+[1.645126] (-) TimerEvent: {}
+[1.680481] (car_gazebo_plugin) StdoutLine: {'line': b'-- Found assimp: /usr/include (found version "5.2.0") \n'}
+[1.745261] (-) TimerEvent: {}
+[1.765537] (car_gazebo_plugin) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[1.845404] (-) TimerEvent: {}
+[1.945865] (-) TimerEvent: {}
+[2.046145] (-) TimerEvent: {}
+[2.111564] (car_gazebo_plugin) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time \n'}
+[2.146245] (-) TimerEvent: {}
+[2.204958] (car_gazebo_plugin) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[2.215777] (car_gazebo_plugin) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.0\n'}
+[2.246354] (-) TimerEvent: {}
+[2.268873] (car_gazebo_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[2.284325] (car_gazebo_plugin) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[2.285460] (car_gazebo_plugin) StdoutLine: {'line': b'-- OGRE_PREFIX_WATCH changed.\n'}
+[2.297260] (car_gazebo_plugin) StdoutLine: {'line': b"-- Checking for module 'OGRE'\n"}
+[2.321475] (car_gazebo_plugin) StdoutLine: {'line': b'--   Found OGRE, version 1.9.0\n'}
+[2.346438] (-) TimerEvent: {}
+[2.381132] (car_gazebo_plugin) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[2.399059] (car_gazebo_plugin) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[2.404791] (car_gazebo_plugin) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[2.407593] (car_gazebo_plugin) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[2.407627] (car_gazebo_plugin) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[2.410508] (car_gazebo_plugin) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[2.410543] (car_gazebo_plugin) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[2.413213] (car_gazebo_plugin) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[2.413246] (car_gazebo_plugin) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[2.415857] (car_gazebo_plugin) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[2.415898] (car_gazebo_plugin) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[2.418457] (car_gazebo_plugin) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[2.418489] (car_gazebo_plugin) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[2.421351] (car_gazebo_plugin) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[2.446521] (-) TimerEvent: {}
+[2.477928] (car_gazebo_plugin) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.0\n'}
+[2.483012] (car_gazebo_plugin) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[2.483213] (car_gazebo_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[2.493997] (car_gazebo_plugin) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[2.500855] (car_gazebo_plugin) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[2.503410] (car_gazebo_plugin) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[2.514781] (car_gazebo_plugin) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[2.538173] (car_gazebo_plugin) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[2.544838] (car_gazebo_plugin) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[2.546572] (-) TimerEvent: {}
+[2.555429] (car_gazebo_plugin) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[2.599469] (car_gazebo_plugin) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[2.607206] (car_gazebo_plugin) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[2.607796] (car_gazebo_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[2.619743] (car_gazebo_plugin) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.0\n'}
+[2.624604] (car_gazebo_plugin) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[2.631317] (car_gazebo_plugin) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[2.646683] (-) TimerEvent: {}
+[2.692697] (car_gazebo_plugin) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[2.703449] (car_gazebo_plugin) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[2.704677] (car_gazebo_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[2.707502] (car_gazebo_plugin) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[2.709227] (car_gazebo_plugin) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[2.711931] (car_gazebo_plugin) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[2.725119] (car_gazebo_plugin) StdoutLine: {'line': b'-- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") \n'}
+[2.726625] (car_gazebo_plugin) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[2.729576] (car_gazebo_plugin) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[2.729896] (car_gazebo_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[2.730072] (car_gazebo_plugin) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.0\n'}
+[2.734933] (car_gazebo_plugin) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[2.735188] (car_gazebo_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[2.746742] (-) TimerEvent: {}
+[2.812773] (car_gazebo_plugin) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[2.844451] (car_gazebo_plugin) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[2.846826] (-) TimerEvent: {}
+[2.870507] (car_gazebo_plugin) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[2.939395] (car_gazebo_plugin) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[2.946965] (-) TimerEvent: {}
+[2.973653] (car_gazebo_plugin) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[3.004456] (car_gazebo_plugin) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[3.047096] (-) TimerEvent: {}
+[3.074012] (car_gazebo_plugin) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[3.075199] (car_gazebo_plugin) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[3.076328] (car_gazebo_plugin) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.0\n'}
+[3.077385] (car_gazebo_plugin) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[3.109944] (car_gazebo_plugin) StdoutLine: {'line': b'-- Found gazebo_ros: 3.7.0 (/opt/ros/humble/share/gazebo_ros/cmake)\n'}
+[3.147229] (-) TimerEvent: {}
+[3.247693] (-) TimerEvent: {}
+[3.347923] (car_gazebo_plugin) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[3.348058] (-) TimerEvent: {}
+[3.448239] (-) TimerEvent: {}
+[3.548470] (-) TimerEvent: {}
+[3.599402] (car_gazebo_plugin) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[3.613231] (car_gazebo_plugin) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[3.648581] (-) TimerEvent: {}
+[3.651840] (car_gazebo_plugin) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[3.691214] (car_gazebo_plugin) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.732842] (car_gazebo_plugin) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.748644] (-) TimerEvent: {}
+[3.831067] (car_gazebo_plugin) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[3.837404] (car_gazebo_plugin) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[3.848748] (-) TimerEvent: {}
+[3.897030] (car_gazebo_plugin) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[3.909545] (car_gazebo_plugin) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[3.948845] (-) TimerEvent: {}
+[4.049012] (-) TimerEvent: {}
+[4.079613] (car_gazebo_plugin) StdoutLine: {'line': b'-- Gazebo version: 11.10\n'}
+[4.079732] (car_gazebo_plugin) StdoutLine: {'line': b"-- Checking for module 'tbb'\n"}
+[4.087110] (car_gazebo_plugin) StdoutLine: {'line': b'--   Found tbb, version 2021.5.0\n'}
+[4.115945] (car_gazebo_plugin) StdoutLine: {'line': b'-- Found gazebo_ros_pkgs: 3.7.0 (/opt/ros/humble/share/gazebo_ros_pkgs/cmake)\n'}
+[4.118412] (car_gazebo_plugin) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[4.149076] (-) TimerEvent: {}
+[4.226282] (car_gazebo_plugin) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.3 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[4.249171] (-) TimerEvent: {}
+[4.291496] (car_gazebo_plugin) StdoutLine: {'line': b'-- Found ackermann_msgs: 2.0.2 (/opt/ros/humble/share/ackermann_msgs/cmake)\n'}
+[4.335940] (car_gazebo_plugin) StdoutLine: {'line': b'-- Found tf2: 0.25.4 (/opt/ros/humble/share/tf2/cmake)\n'}
+[4.349262] (-) TimerEvent: {}
+[4.359368] (car_gazebo_plugin) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.4 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[4.449350] (-) TimerEvent: {}
+[4.549569] (-) TimerEvent: {}
+[4.649835] (-) TimerEvent: {}
+[4.705747] (car_gazebo_plugin) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[4.749920] (-) TimerEvent: {}
+[4.794007] (car_gazebo_plugin) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[4.794116] (car_gazebo_plugin) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/farog/ros2_ws/src/car_gazebo_plugin/include>\n'}
+[4.794150] (car_gazebo_plugin) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[4.795124] (car_gazebo_plugin) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[4.795200] (car_gazebo_plugin) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[4.796670] (car_gazebo_plugin) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.798728] (car_gazebo_plugin) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[4.798792] (car_gazebo_plugin) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[4.799898] (car_gazebo_plugin) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[4.808302] (car_gazebo_plugin) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.850007] (-) TimerEvent: {}
+[4.941524] (car_gazebo_plugin) StdoutLine: {'line': b'-- Generating done\n'}
+[4.950145] (-) TimerEvent: {}
+[4.980148] (car_gazebo_plugin) StdoutLine: {'line': b'-- Build files have been written to: /home/farog/ros2_ws/build/car_gazebo_plugin\n'}
+[5.001380] (car_gazebo_plugin) CommandEnded: {'returncode': 0}
+[5.001936] (car_gazebo_plugin) JobProgress: {'identifier': 'car_gazebo_plugin', 'progress': 'build'}
+[5.002211] (car_gazebo_plugin) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/farog/ros2_ws/build/car_gazebo_plugin', '--', '-j20', '-l20'], 'cwd': '/home/farog/ros2_ws/build/car_gazebo_plugin', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'farog'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/farog'), ('OLDPWD', '/home/farog/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '2081'), ('SYSTEMD_EXEC_PID', '2490'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3266'), ('COLCON_PREFIX_PATH', '/home/farog/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'farog'), ('JOURNAL_STREAM', '8:17149'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'farog'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/farog/ros2_ws/src/my_robot_description/meshes/:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/farog/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/nbc135:@/tmp/.ICE-unix/2471,unix/nbc135:/tmp/.ICE-unix/2471'), ('INVOCATION_ID', '852b56b31e154440bc3cf4f96b6d61d3'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/farog/ros2_ws/install/turtlebot3_simulations:/home/farog/ros2_ws/install/turtlebot3_gazebo:/home/farog/ros2_ws/install/turtlebot3_fake_node:/home/farog/ros2_ws/install/my_robot_bringup:/home/farog/ros2_ws/install/my_robot_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:4862148a-470b-4abe-acdd-4448ec659c3f'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/farog/ros2_ws/build/car_gazebo_plugin'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/farog/ros2_ws/install/turtlebot3_simulations:/home/farog/ros2_ws/install/turtlebot3_gazebo:/home/farog/ros2_ws/install/turtlebot3_fake_node:/home/farog/ros2_ws/install/my_robot_bringup:/home/farog/ros2_ws/install/my_robot_description:/opt/ros/humble')]), 'shell': False}
+[5.050280] (-) TimerEvent: {}
+[5.089909] (car_gazebo_plugin) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/car_gazebo_plugin.dir/src/car_gazebo_plugin.cpp.o\x1b[0m\n'}
+[5.150370] (-) TimerEvent: {}
+[5.250599] (-) TimerEvent: {}
+[5.350797] (-) TimerEvent: {}
+[5.451016] (-) TimerEvent: {}
+[5.551266] (-) TimerEvent: {}
+[5.651477] (-) TimerEvent: {}
+[5.751716] (-) TimerEvent: {}
+[5.851976] (-) TimerEvent: {}
+[5.952222] (-) TimerEvent: {}
+[6.052413] (-) TimerEvent: {}
+[6.152610] (-) TimerEvent: {}
+[6.252839] (-) TimerEvent: {}
+[6.353043] (-) TimerEvent: {}
+[6.453330] (-) TimerEvent: {}
+[6.553532] (-) TimerEvent: {}
+[6.653742] (-) TimerEvent: {}
+[6.753990] (-) TimerEvent: {}
+[6.854219] (-) TimerEvent: {}
+[6.954517] (-) TimerEvent: {}
+[7.054767] (-) TimerEvent: {}
+[7.154978] (-) TimerEvent: {}
+[7.255214] (-) TimerEvent: {}
+[7.355501] (-) TimerEvent: {}
+[7.455792] (-) TimerEvent: {}
+[7.556080] (-) TimerEvent: {}
+[7.656392] (-) TimerEvent: {}
+[7.756682] (-) TimerEvent: {}
+[7.856989] (-) TimerEvent: {}
+[7.957302] (-) TimerEvent: {}
+[8.057631] (-) TimerEvent: {}
+[8.157934] (-) TimerEvent: {}
+[8.258256] (-) TimerEvent: {}
+[8.358564] (-) TimerEvent: {}
+[8.458944] (-) TimerEvent: {}
+[8.559548] (-) TimerEvent: {}
+[8.659896] (-) TimerEvent: {}
+[8.760251] (-) TimerEvent: {}
+[8.860598] (-) TimerEvent: {}
+[8.960946] (-) TimerEvent: {}
+[9.061292] (-) TimerEvent: {}
+[9.161636] (-) TimerEvent: {}
+[9.261986] (-) TimerEvent: {}
+[9.362329] (-) TimerEvent: {}
+[9.462685] (-) TimerEvent: {}
+[9.563037] (-) TimerEvent: {}
+[9.663381] (-) TimerEvent: {}
+[9.763725] (-) TimerEvent: {}
+[9.864070] (-) TimerEvent: {}
+[9.964418] (-) TimerEvent: {}
+[10.064774] (-) TimerEvent: {}
+[10.165124] (-) TimerEvent: {}
+[10.265474] (-) TimerEvent: {}
+[10.365813] (-) TimerEvent: {}
+[10.466155] (-) TimerEvent: {}
+[10.566497] (-) TimerEvent: {}
+[10.666860] (-) TimerEvent: {}
+[10.767203] (-) TimerEvent: {}
+[10.867570] (-) TimerEvent: {}
+[10.967938] (-) TimerEvent: {}
+[11.068292] (-) TimerEvent: {}
+[11.168652] (-) TimerEvent: {}
+[11.269007] (-) TimerEvent: {}
+[11.369361] (-) TimerEvent: {}
+[11.469722] (-) TimerEvent: {}
+[11.570076] (-) TimerEvent: {}
+[11.670441] (-) TimerEvent: {}
+[11.770834] (-) TimerEvent: {}
+[11.871192] (-) TimerEvent: {}
+[11.971550] (-) TimerEvent: {}
+[12.071901] (-) TimerEvent: {}
+[12.172258] (-) TimerEvent: {}
+[12.272620] (-) TimerEvent: {}
+[12.372981] (-) TimerEvent: {}
+[12.473336] (-) TimerEvent: {}
+[12.573698] (-) TimerEvent: {}
+[12.674059] (-) TimerEvent: {}
+[12.774423] (-) TimerEvent: {}
+[12.874786] (-) TimerEvent: {}
+[12.975145] (-) TimerEvent: {}
+[13.075504] (-) TimerEvent: {}
+[13.175868] (-) TimerEvent: {}
+[13.276226] (-) TimerEvent: {}
+[13.376584] (-) TimerEvent: {}
+[13.476943] (-) TimerEvent: {}
+[13.577305] (-) TimerEvent: {}
+[13.677670] (-) TimerEvent: {}
+[13.778039] (-) TimerEvent: {}
+[13.878405] (-) TimerEvent: {}
+[13.978782] (-) TimerEvent: {}
+[14.079126] (-) TimerEvent: {}
+[14.179470] (-) TimerEvent: {}
+[14.279816] (-) TimerEvent: {}
+[14.380157] (-) TimerEvent: {}
+[14.480519] (-) TimerEvent: {}
+[14.580867] (-) TimerEvent: {}
+[14.681206] (-) TimerEvent: {}
+[14.781545] (-) TimerEvent: {}
+[14.881883] (-) TimerEvent: {}
+[14.982219] (-) TimerEvent: {}
+[15.082552] (-) TimerEvent: {}
+[15.182865] (-) TimerEvent: {}
+[15.283201] (-) TimerEvent: {}
+[15.383463] (-) TimerEvent: {}
+[15.483727] (-) TimerEvent: {}
+[15.584078] (-) TimerEvent: {}
+[15.684414] (-) TimerEvent: {}
+[15.784753] (-) TimerEvent: {}
+[15.885091] (-) TimerEvent: {}
+[15.985425] (-) TimerEvent: {}
+[16.085767] (-) TimerEvent: {}
+[16.186103] (-) TimerEvent: {}
+[16.286439] (-) TimerEvent: {}
+[16.386795] (-) TimerEvent: {}
+[16.487132] (-) TimerEvent: {}
+[16.587469] (-) TimerEvent: {}
+[16.687811] (-) TimerEvent: {}
+[16.788165] (-) TimerEvent: {}
+[16.888508] (-) TimerEvent: {}
+[16.988847] (-) TimerEvent: {}
+[17.089179] (-) TimerEvent: {}
+[17.189517] (-) TimerEvent: {}
+[17.289824] (-) TimerEvent: {}
+[17.390174] (-) TimerEvent: {}
+[17.490524] (-) TimerEvent: {}
+[17.590889] (-) TimerEvent: {}
+[17.691189] (-) TimerEvent: {}
+[17.791556] (-) TimerEvent: {}
+[17.891944] (-) TimerEvent: {}
+[17.987143] (car_gazebo_plugin) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libcar_gazebo_plugin.so\x1b[0m\n'}
+[17.992022] (-) TimerEvent: {}
+[18.092346] (-) TimerEvent: {}
+[18.192809] (-) TimerEvent: {}
+[18.293064] (-) TimerEvent: {}
+[18.393312] (-) TimerEvent: {}
+[18.493663] (-) TimerEvent: {}
+[18.594034] (-) TimerEvent: {}
+[18.694376] (-) TimerEvent: {}
+[18.794734] (-) TimerEvent: {}
+[18.881906] (car_gazebo_plugin) StdoutLine: {'line': b'[100%] Built target car_gazebo_plugin\n'}
+[18.892531] (car_gazebo_plugin) CommandEnded: {'returncode': 0}
+[18.894808] (-) TimerEvent: {}
+[18.916806] (car_gazebo_plugin) JobProgress: {'identifier': 'car_gazebo_plugin', 'progress': 'install'}
+[18.925290] (car_gazebo_plugin) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/farog/ros2_ws/build/car_gazebo_plugin'], 'cwd': '/home/farog/ros2_ws/build/car_gazebo_plugin', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'farog'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/farog'), ('OLDPWD', '/home/farog/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '2081'), ('SYSTEMD_EXEC_PID', '2490'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3266'), ('COLCON_PREFIX_PATH', '/home/farog/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'farog'), ('JOURNAL_STREAM', '8:17149'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'farog'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/farog/ros2_ws/src/my_robot_description/meshes/:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/farog/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/nbc135:@/tmp/.ICE-unix/2471,unix/nbc135:/tmp/.ICE-unix/2471'), ('INVOCATION_ID', '852b56b31e154440bc3cf4f96b6d61d3'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/farog/ros2_ws/install/turtlebot3_simulations:/home/farog/ros2_ws/install/turtlebot3_gazebo:/home/farog/ros2_ws/install/turtlebot3_fake_node:/home/farog/ros2_ws/install/my_robot_bringup:/home/farog/ros2_ws/install/my_robot_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:4862148a-470b-4abe-acdd-4448ec659c3f'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/farog/ros2_ws/build/car_gazebo_plugin'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/farog/ros2_ws/install/turtlebot3_simulations:/home/farog/ros2_ws/install/turtlebot3_gazebo:/home/farog/ros2_ws/install/turtlebot3_fake_node:/home/farog/ros2_ws/install/my_robot_bringup:/home/farog/ros2_ws/install/my_robot_description:/opt/ros/humble')]), 'shell': False}
+[18.934856] (car_gazebo_plugin) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[18.934981] (car_gazebo_plugin) StdoutLine: {'line': b'-- Installing: /home/farog/ros2_ws/install/car_gazebo_plugin/share/car_gazebo_plugin/libcar_gazebo_plugin.so\n'}
+[18.994916] (-) TimerEvent: {}
+[19.095127] (-) TimerEvent: {}
+[19.125856] (car_gazebo_plugin) StdoutLine: {'line': b'-- Set runtime path of "/home/farog/ros2_ws/install/car_gazebo_plugin/share/car_gazebo_plugin/libcar_gazebo_plugin.so" to ""\n'}
+[19.126176] (car_gazebo_plugin) StdoutLine: {'line': b'-- Installing: /home/farog/ros2_ws/install/car_gazebo_plugin/share/ament_index/resource_index/package_run_dependencies/car_gazebo_plugin\n'}
+[19.126636] (car_gazebo_plugin) StdoutLine: {'line': b'-- Installing: /home/farog/ros2_ws/install/car_gazebo_plugin/share/ament_index/resource_index/parent_prefix_path/car_gazebo_plugin\n'}
+[19.127483] (car_gazebo_plugin) StdoutLine: {'line': b'-- Installing: /home/farog/ros2_ws/install/car_gazebo_plugin/share/car_gazebo_plugin/environment/ament_prefix_path.sh\n'}
+[19.128033] (car_gazebo_plugin) StdoutLine: {'line': b'-- Installing: /home/farog/ros2_ws/install/car_gazebo_plugin/share/car_gazebo_plugin/environment/ament_prefix_path.dsv\n'}
+[19.128511] (car_gazebo_plugin) StdoutLine: {'line': b'-- Installing: /home/farog/ros2_ws/install/car_gazebo_plugin/share/car_gazebo_plugin/environment/path.sh\n'}
+[19.128992] (car_gazebo_plugin) StdoutLine: {'line': b'-- Installing: /home/farog/ros2_ws/install/car_gazebo_plugin/share/car_gazebo_plugin/environment/path.dsv\n'}
+[19.129379] (car_gazebo_plugin) StdoutLine: {'line': b'-- Installing: /home/farog/ros2_ws/install/car_gazebo_plugin/share/car_gazebo_plugin/local_setup.bash\n'}
+[19.129916] (car_gazebo_plugin) StdoutLine: {'line': b'-- Installing: /home/farog/ros2_ws/install/car_gazebo_plugin/share/car_gazebo_plugin/local_setup.sh\n'}
+[19.130935] (car_gazebo_plugin) StdoutLine: {'line': b'-- Installing: /home/farog/ros2_ws/install/car_gazebo_plugin/share/car_gazebo_plugin/local_setup.zsh\n'}
+[19.132001] (car_gazebo_plugin) StdoutLine: {'line': b'-- Installing: /home/farog/ros2_ws/install/car_gazebo_plugin/share/car_gazebo_plugin/local_setup.dsv\n'}
+[19.132389] (car_gazebo_plugin) StdoutLine: {'line': b'-- Installing: /home/farog/ros2_ws/install/car_gazebo_plugin/share/car_gazebo_plugin/package.dsv\n'}
+[19.132843] (car_gazebo_plugin) StdoutLine: {'line': b'-- Installing: /home/farog/ros2_ws/install/car_gazebo_plugin/share/ament_index/resource_index/packages/car_gazebo_plugin\n'}
+[19.132934] (car_gazebo_plugin) StdoutLine: {'line': b'-- Installing: /home/farog/ros2_ws/install/car_gazebo_plugin/share/car_gazebo_plugin/cmake/car_gazebo_pluginConfig.cmake\n'}
+[19.133493] (car_gazebo_plugin) StdoutLine: {'line': b'-- Installing: /home/farog/ros2_ws/install/car_gazebo_plugin/share/car_gazebo_plugin/cmake/car_gazebo_pluginConfig-version.cmake\n'}
+[19.133979] (car_gazebo_plugin) StdoutLine: {'line': b'-- Installing: /home/farog/ros2_ws/install/car_gazebo_plugin/share/car_gazebo_plugin/package.xml\n'}
+[19.135673] (car_gazebo_plugin) CommandEnded: {'returncode': 0}
+[19.195225] (-) TimerEvent: {}
+[19.231140] (car_gazebo_plugin) JobEnded: {'identifier': 'car_gazebo_plugin', 'rc': 0}
+[19.231833] (-) EventReactorShutdown: {}

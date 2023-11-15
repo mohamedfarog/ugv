@@ -48,6 +48,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     "/home/farog/ros2_ws/src/my_robot_description/launch"
     "/home/farog/ros2_ws/src/my_robot_description/meshes"
     "/home/farog/ros2_ws/src/my_robot_description/rviz"
+    "/home/farog/ros2_ws/src/my_robot_description/config"
     )
 endif()
 

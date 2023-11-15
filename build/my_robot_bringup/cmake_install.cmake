@@ -47,6 +47,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     "/home/farog/ros2_ws/src/my_robot_bringup/launch"
     "/home/farog/ros2_ws/src/my_robot_bringup/rviz"
     "/home/farog/ros2_ws/src/my_robot_bringup/worlds"
+    "/home/farog/ros2_ws/src/my_robot_bringup/config"
+    "/home/farog/ros2_ws/src/my_robot_bringup/maps"
+    "/home/farog/ros2_ws/src/my_robot_bringup/behavior_trees"
+    "/home/farog/ros2_ws/src/my_robot_bringup/params"
     )
 endif()
 

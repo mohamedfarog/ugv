@@ -15,12 +15,11 @@
     </visual>
   </link>
 
-
   <!-- define ultrasonic sensor joint -->
   <joint name="range_joint" type="fixed">
     <parent link="base_link"/>
     <child link="base_laser_link_range"/>
-    <origin xyz="0.75 -0.35 0.45" rpy="0 0 0" />
+    <origin xyz="-0.58 -0.4 0.5" rpy="0 3.2 0"/>  
   </joint>
  
   <!-- ultrasonic 0 gzebo -->
@@ -82,14 +81,13 @@
         <color rgba='1 0 0 0.5' />
       </material>
     </visual>
-  </link>
+  </link> 
 
 
-  <!-- define ultrasonic sensor joint -->
-  <joint name="range1_joint" type="fixed">
+<joint name="range1_joint" type="fixed">
     <parent link="base_link"/>
     <child link="base_laser_link_range1"/>
-    <origin xyz="0.75 0.35 0.45" rpy="0 0 0" />
+    <origin xyz="-0.60 -0.2 0.5" rpy="0 3.2 0"/>  
   </joint>
 
   <gazebo reference="base_laser_link_range1">
@@ -136,10 +134,8 @@
             </plugin>
         </sensor>
     </gazebo>
-    
 
-
-  <link name="base_laser_link_range2">
+ <link name="base_laser_link_range2">
     <visual>
       <origin xyz='0 0 0' rpy='0 0 0' />
       <geometry>
@@ -151,12 +147,10 @@
     </visual>
   </link>
 
-
-  <!-- define ultrasonic sensor joint -->
   <joint name="range2_joint" type="fixed">
     <parent link="base_link"/>
     <child link="base_laser_link_range2"/>
-    <origin xyz="0.75 0.12 0.45" rpy="0 0 0" />
+    <origin xyz="-0.58 0.4 0.5" rpy="0 3.2 0"/>  
   </joint>
 
   <gazebo reference="base_laser_link_range2">
@@ -218,11 +212,10 @@
   </link>
 
 
-  <!-- define ultrasonic sensor joint -->
   <joint name="range3_joint" type="fixed">
     <parent link="base_link"/>
     <child link="base_laser_link_range3"/>
-    <origin xyz="0.75 -0.12 0.45" rpy="0 0 0" />
+    <origin xyz="-0.58 0.2 0.5" rpy="0 3.2 0"/>  
   </joint>
 
   <gazebo reference="base_laser_link_range3">
@@ -270,7 +263,7 @@
         </sensor>
     </gazebo>
 
-    <link name="base_laser_link_range4">
+  <link name="base_laser_link_range4">
         <visual>
           <origin xyz='0 0 0' rpy='0 0 0' />
           <geometry>
@@ -282,11 +275,10 @@
         </visual>
       </link>
     
-      <!-- define ultrasonic sensor joint -->
       <joint name="range4_joint" type="fixed">
         <parent link="base_link"/>
         <child link="base_laser_link_range4"/>
-        <origin xyz="-0.98 -0.35 0.45" rpy="0 0 0" />
+        <origin xyz="1.12 -0.4 0.5" rpy="0 3.2 0"/>  
       </joint>
 
       <gazebo reference="base_laser_link_range4">
@@ -347,14 +339,13 @@
         </visual>
       </link>
     
-      <!-- define ultrasonic sensor joint -->
       <joint name="range5_joint" type="fixed">
         <parent link="base_link"/>
         <child link="base_laser_link_range5"/>
-        <origin xyz="-0.98 0.35 0.45" rpy="0 0 0" />
+        <origin xyz="1.12 -0.2 0.5" rpy="0 3.2 0"/>  
       </joint>
 
-      <gazebo reference="base_laser_link_range5">
+    <gazebo reference="base_laser_link_range5">
         <material>Gazebo/Red</material>
             <sensor name="base_laser_link_range5" type="ray">
                 <always_on>true</always_on>
@@ -412,12 +403,10 @@
     </visual>
   </link>
 
-
-  <!-- define ultrasonic sensor joint -->
   <joint name="range6_joint" type="fixed">
     <parent link="base_link"/>
     <child link="base_laser_link_range6"/>
-    <origin xyz="-0.98 0.12 0.45" rpy="0 0 0" />
+    <origin xyz="1.12 0.4 0.5" rpy="0 3.2 0"/>  
   </joint>
 
   <gazebo reference="base_laser_link_range6">
@@ -466,7 +455,7 @@
     </gazebo>
 
 
-  <link name="base_laser_link_range7">
+ <link name="base_laser_link_range7">
     <visual>
       <origin xyz='0 0 0' rpy='0 0 0' />
       <geometry>
@@ -478,11 +467,10 @@
     </visual>
   </link>
 
-  <!-- define ultrasonic sensor joint -->
   <joint name="range7_joint" type="fixed">
     <parent link="base_link"/>
     <child link="base_laser_link_range7"/>
-    <origin xyz="-0.98 -0.12 0.45" rpy="0 0 0" />
+    <origin xyz="1.12 0.2 0.5" rpy="0 3.2 0"/>  
   </joint>
 
   <gazebo reference="base_laser_link_range7">
@@ -530,7 +518,7 @@
         </sensor>
     </gazebo>
 
-    <link name="base_laser_link_range8">
+   <link name="base_laser_link_range8">
         <visual>
           <origin xyz='0 0 0' rpy='0 0 0' />
           <geometry>
@@ -542,11 +530,10 @@
         </visual>
       </link>
     
-      <!-- define ultrasonic sensor joint -->
       <joint name="range8_joint" type="fixed">
         <parent link="base_link"/>
         <child link="base_laser_link_range8"/>
-        <origin xyz="0.35 -0.52 0.45" rpy="0 0 -1.5" />
+        <origin xyz="0.95 -0.52 0.53" rpy="0 0 -1.5" />
 
       </joint>
 
@@ -608,11 +595,10 @@
         </visual>
       </link>
     
-      <!-- define ultrasonic sensor joint -->
       <joint name="range9_joint" type="fixed">
         <parent link="base_link"/>
         <child link="base_laser_link_range9"/>
-        <origin xyz="0.05 -0.52 0.45" rpy="0 0 -1.5" />
+        <origin xyz="0.47 -0.52 0.53" rpy="0 0 -1.5" />
       </joint>
 
       <gazebo reference="base_laser_link_range9">
@@ -672,11 +658,10 @@
         </visual>
       </link>
     
-      <!-- define ultrasonic sensor joint -->
       <joint name="range10_joint" type="fixed">
         <parent link="base_link"/>
         <child link="base_laser_link_range10"/>
-        <origin xyz="-0.30 -0.52 0.45" rpy="0 0 1.5" />
+        <origin xyz="0.11 -0.52 0.53" rpy="0 0 -1.5" />
       </joint>
 
       <gazebo reference="base_laser_link_range10">
@@ -736,11 +721,10 @@
         </visual>
       </link>
     
-      <!-- define ultrasonic sensor joint -->
       <joint name="range11_joint" type="fixed">
         <parent link="base_link"/>
         <child link="base_laser_link_range11"/>
-        <origin xyz="-0.65 -0.52 0.45" rpy="0 0 -1.5" />
+        <origin xyz="-0.30 -0.52 0.53" rpy="0 0 -1.5" />
       </joint>
 
       <gazebo reference="base_laser_link_range11">
@@ -788,7 +772,6 @@
             </sensor>
         </gazebo>
 
-      <!-- dgeeeeeeeeeeel -->
       <link name="base_laser_link_range12">
         <visual>
           <origin xyz='0 0 0' rpy='0 0 0' />
@@ -801,11 +784,10 @@
         </visual>
       </link>
     
-      <!-- define ultrasonic sensor joint -->
       <joint name="range12_joint" type="fixed">
         <parent link="base_link"/>
         <child link="base_laser_link_range12"/>
-        <origin xyz="0.35 0.52 0.45" rpy="0 0 1.5" />
+        <origin xyz="0.95 0.52 0.53" rpy="0 0 -1.5" />
       </joint>
 
       <gazebo reference="base_laser_link_range12">
@@ -865,11 +847,10 @@
         </visual>
       </link>
     
-      <!-- define ultrasonic sensor joint -->
       <joint name="range13_joint" type="fixed">
         <parent link="base_link"/>
         <child link="base_laser_link_range13"/>
-        <origin xyz="0.05 0.52 0.45" rpy="0 0 1.5" />
+        <origin xyz="0.47 0.52 0.53" rpy="0 0 -1.5" />
       </joint>
 
       <gazebo reference="base_laser_link_range13">
@@ -877,7 +858,6 @@
             <sensor name="base_laser_link_range13" type="ray">
                 <always_on>true</always_on>
                 <visualize>false</visualize>
-
 
                 <pose>0.0 0 0.0 0 0 0</pose>
                 <update_rate>50</update_rate>
@@ -932,11 +912,10 @@
         </visual>
       </link>
     
-      <!-- define ultrasonic sensor joint -->
       <joint name="range14_joint" type="fixed">
         <parent link="base_link"/>
         <child link="base_laser_link_range14"/>
-        <origin xyz="-0.30 0.52 0.45" rpy="0 0 1.5" />
+        <origin xyz="0.11 0.52 0.53" rpy="0 0 -1.5" />
       </joint>
 
       <gazebo reference="base_laser_link_range14">
@@ -996,11 +975,10 @@
         </visual>
       </link>
     
-      <!-- define ultrasonic sensor joint -->
       <joint name="range15_joint" type="fixed">
         <parent link="base_link"/>
         <child link="base_laser_link_range15"/>
-        <origin xyz="-0.65 0.52 0.45" rpy="0 0 1.5" />
+        <origin xyz="-0.30 0.52 0.53" rpy="0 0 -1.5" />
       </joint>
     
       <gazebo reference="base_laser_link_range15">
@@ -1039,7 +1017,7 @@
                 <plugin name="bytes_ultrasound15" filename="libgazebo_ros_ray_sensor.so">
                     <ros>
                         <namespace>distance</namespace>
-                        <argument>~/out:=range16</argument>
+                        <argument>--ros-args --remap ~/out:=range15</argument>
                     </ros>
                     <output_type>sensor_msgs/Range</output_type>
                     <radiation_type>ultrasound</radiation_type>
@@ -1047,4 +1025,4 @@
                 </plugin>
             </sensor>
         </gazebo>
-</robot>
+</robot> 

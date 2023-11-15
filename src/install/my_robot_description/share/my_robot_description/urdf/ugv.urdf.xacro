@@ -5,7 +5,8 @@
      <xacro:include filename="mobile_base_gazebo.xacro" />
      <xacro:include filename="camera.xacro" />
      <xacro:include filename="lidar.xacro" />
-
+     <xacro:include filename="ultrasonic.xacro"/>
+ 
 
      <xacro:property name="base_length" value="0.12" />
      <xacro:property name="base_width" value="0.8" />
@@ -13,8 +14,11 @@
      <xacro:property name="wheel_radius" value="0.2" />
      <xacro:property name="wheel_length" value="0.10" />
 
-    <link name="base_footprint" />
+    <link name="base_footprint">
+        
+    </link>
 
+    
     <link name="base_link">
        <visual>
           <geometry>
@@ -116,6 +120,7 @@
         <parent link="base_footprint" />
         <child link="base_link" />
         <origin xyz="0 0 0.1" rpy="0 0 0"/>
+
     </joint>
 
     <joint name="base_right_wheel_joint" type="continuous">
@@ -123,6 +128,8 @@
         <child link="right_wheel_link" />
         <origin xyz="-0.55 -0.480 0.1" rpy="0 0 0" />
         <axis xyz="0 1 0" />
+        <limit effort="10000.00" velocity="10000.00"/>
+        <dynamics damping="1.0"  friction="1.0"/>
     </joint>
 
     <joint name="base_left_wheel_joint" type="continuous">
@@ -130,20 +137,25 @@
         <child link="left_wheel_link" />
         <origin xyz="-0.55 0.480 0.1" rpy="0 0 0" />
         <axis xyz="0 1 0" />
+        <limit effort="10000.00" velocity="10000.00"/>
+        <dynamics damping="1.0"  friction="1.0"/>
     </joint>
+ 
+  <joint name="base_back_right_wheel_joint" type="continuous">
+    <origin xyz="0.38 -0.480 0.1" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="back_right_wheel_link" />
+    <axis xyz="0 1 0" />
+    <limit effort="10000.00" velocity="10000.00"/>
+    <dynamics damping="1.0"  friction="1.0"/>
+  </joint>
 
-      <joint name="base_back_right_wheel_joint" type="continuous">
-        <parent link="base_link" />
-        <child link="back_right_wheel_link" />
-        <origin xyz="0.38 -0.480 0.1" rpy="0 0 0" />
-        <axis xyz="0 1 0" />
-    </joint>
-
-        <joint name="base_back_left_wheel_joint" type="continuous">
-        <parent link="base_link" />
-        <child link="back_left_wheel_link" />
-        <origin xyz="0.38 0.480 0.1" rpy="0 0 0" />
-        <axis xyz="0 1 0" />
-    </joint>
-
+  <joint name="base_back_left_wheel_joint" type="continuous">
+    <origin xyz="0.38 0.480 0.1" rpy="0 0 0" />   
+    <parent link="base_link" />
+    <child link="back_left_wheel_link" />
+    <axis xyz="0 1 0" />
+    <limit effort="10000.00" velocity="10000.00"/>
+    <dynamics damping="1.0"  friction="1.0"/>
+  </joint>
 </robot>

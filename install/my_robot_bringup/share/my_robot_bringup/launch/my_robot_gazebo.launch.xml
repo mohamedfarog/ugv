@@ -1,5 +1,8 @@
 <?xml version="1.0"?>
 <launch>
+
+    <arg name="use_sim_time" default="true"/>
+
     <let name="urdf_path" 
          value="$(find-pkg-share my_robot_description)/urdf/ugv.urdf.xacro" />
 <let name="rviz_config_path"
@@ -14,10 +17,11 @@ value="$(find-pkg-share my_robot_bringup)/rviz/urdf_config.rviz" />
 
 
         <node pkg="joint_state_publisher_gui" exec="joint_state_publisher_gui" />
-    
+
 
    <include file="$(find-pkg-share gazebo_ros)/launch/gazebo.launch.py">
-        <!-- <arg name="world" value="$(find-pkg-share my_robot_bringup)/worlds/my_world.world" /> -->
+         <arg name="use_sim_time" value="$(var use_sim_time)"/>
+        <!-- <arg name="world" value="$(find-pkg-share my_robot_bringup)/worlds/nav1.world" /> -->
         <!-- <arg name="world" value="$(find-pkg-share my_robot_bringup)/worlds/house.world" /> -->
         <!-- <arg name="world" value="$(find-pkg-share my_robot_bringup)/worlds/desert.world" /> -->
 

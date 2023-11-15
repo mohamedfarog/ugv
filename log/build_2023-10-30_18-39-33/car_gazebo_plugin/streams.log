@@ -1,0 +1,10 @@
+[0.040s] Invoking command in '/home/farog/ros2_ws/build/car_gazebo_plugin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/farog/ros2_ws/build/car_gazebo_plugin -- -j20 -l20
+[0.080s] [ 50%] [32mBuilding CXX object CMakeFiles/car_gazebo_plugin.dir/src/car_gazebo_plugin.cpp.o[0m
+[5.493s] In file included from [01m[K/home/farog/ros2_ws/src/car_gazebo_plugin/src/car_gazebo_plugin.cpp:1[m[K:
+[5.493s] [01m[K/home/farog/ros2_ws/src/car_gazebo_plugin/src/car_gazebo_plugin.hpp:135:39:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""ss[m[K’
+[5.493s]   135 |   const double rear_wheelbase_width = [01;31m[K0.130ss[m[K;
+[5.494s]       |                                       [01;31m[K^~~~~~~[m[K
+[8.238s] gmake[2]: *** [CMakeFiles/car_gazebo_plugin.dir/build.make:76: CMakeFiles/car_gazebo_plugin.dir/src/car_gazebo_plugin.cpp.o] Error 1
+[8.238s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/car_gazebo_plugin.dir/all] Error 2
+[8.239s] gmake: *** [Makefile:146: all] Error 2
+[8.240s] Invoked command in '/home/farog/ros2_ws/build/car_gazebo_plugin' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/farog/ros2_ws/build/car_gazebo_plugin -- -j20 -l20

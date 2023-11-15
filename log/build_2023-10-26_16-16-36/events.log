@@ -1,0 +1,211 @@
+[0.000000] (-) TimerEvent: {}
+[0.000139] (my_robot_description) JobQueued: {'identifier': 'my_robot_description', 'dependencies': OrderedDict()}
+[0.000157] (my_robot_bringup) JobQueued: {'identifier': 'my_robot_bringup', 'dependencies': OrderedDict([('my_robot_description', '/home/farog/ros2_ws/install/my_robot_description')])}
+[0.000169] (my_robot_description) JobStarted: {'identifier': 'my_robot_description'}
+[0.033161] (my_robot_description) JobProgress: {'identifier': 'my_robot_description', 'progress': 'cmake'}
+[0.033952] (my_robot_description) JobProgress: {'identifier': 'my_robot_description', 'progress': 'build'}
+[0.034270] (my_robot_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/farog/ros2_ws/build/my_robot_description', '--', '-j20', '-l20'], 'cwd': '/home/farog/ros2_ws/build/my_robot_description', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'farog'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/farog'), ('OLDPWD', '/home/farog'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '2785'), ('SYSTEMD_EXEC_PID', '3242'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '351565'), ('COLCON_PREFIX_PATH', '/home/farog/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'farog'), ('JOURNAL_STREAM', '8:24774'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'farog'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/farog/ros2_ws/src/my_robot_description/meshes/:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/farog/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/nbc135:@/tmp/.ICE-unix/3224,unix/nbc135:/tmp/.ICE-unix/3224'), ('INVOCATION_ID', '1d0f19a16bf742ac9166edc7f7b19a3c'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/farog/ros2_ws/install/turtlebot3_simulations:/home/farog/ros2_ws/install/turtlebot3_gazebo:/home/farog/ros2_ws/install/turtlebot3_fake_node:/home/farog/ros2_ws/install/my_robot_bringup:/home/farog/ros2_ws/install/my_robot_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:840748aa-5d23-4037-a45d-dc0488a142a4'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/farog/ros2_ws/build/my_robot_description'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/farog/ros2_ws/install/turtlebot3_simulations:/home/farog/ros2_ws/install/turtlebot3_gazebo:/home/farog/ros2_ws/install/turtlebot3_fake_node:/home/farog/ros2_ws/install/my_robot_bringup:/home/farog/ros2_ws/install/my_robot_description:/opt/ros/humble')]), 'shell': False}
+[0.054618] (my_robot_description) CommandEnded: {'returncode': 0}
+[0.072736] (my_robot_description) JobProgress: {'identifier': 'my_robot_description', 'progress': 'install'}
+[0.082044] (my_robot_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/farog/ros2_ws/build/my_robot_description'], 'cwd': '/home/farog/ros2_ws/build/my_robot_description', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'farog'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/farog'), ('OLDPWD', '/home/farog'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '2785'), ('SYSTEMD_EXEC_PID', '3242'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '351565'), ('COLCON_PREFIX_PATH', '/home/farog/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'farog'), ('JOURNAL_STREAM', '8:24774'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'farog'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/farog/ros2_ws/src/my_robot_description/meshes/:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/farog/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/nbc135:@/tmp/.ICE-unix/3224,unix/nbc135:/tmp/.ICE-unix/3224'), ('INVOCATION_ID', '1d0f19a16bf742ac9166edc7f7b19a3c'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/farog/ros2_ws/install/turtlebot3_simulations:/home/farog/ros2_ws/install/turtlebot3_gazebo:/home/farog/ros2_ws/install/turtlebot3_fake_node:/home/farog/ros2_ws/install/my_robot_bringup:/home/farog/ros2_ws/install/my_robot_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:840748aa-5d23-4037-a45d-dc0488a142a4'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/farog/ros2_ws/build/my_robot_description'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/farog/ros2_ws/install/turtlebot3_simulations:/home/farog/ros2_ws/install/turtlebot3_gazebo:/home/farog/ros2_ws/install/turtlebot3_fake_node:/home/farog/ros2_ws/install/my_robot_bringup:/home/farog/ros2_ws/install/my_robot_description:/opt/ros/humble')]), 'shell': False}
+[0.092407] (my_robot_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.092648] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//urdf\n'}
+[0.092733] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//urdf/common_properties.xacro\n'}
+[0.092803] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//urdf/ultrasonic.xacro\n'}
+[0.092893] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//urdf/ackermann_controller.xacro\n'}
+[0.092958] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//urdf/mobile_base_gazebo.xacro\n'}
+[0.093020] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//urdf/ugv.urdf\n'}
+[0.093082] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//urdf/camera.xacro\n'}
+[0.093144] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//urdf/lidar.xacro\n'}
+[0.093205] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//urdf/ugv.urdf.xacro\n'}
+[0.093270] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//urdf/ros2_control.xacro\n'}
+[0.093475] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//launch\n'}
+[0.093671] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//launch/display.launch.xml\n'}
+[0.093761] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//launch/mapping.launch.py\n'}
+[0.093828] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//meshes\n'}
+[0.093905] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//meshes/wheel1.dae\n'}
+[0.093977] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//meshes/body.dae\n'}
+[0.094038] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//meshes/body1.dae\n'}
+[0.094097] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//meshes/model.dae\n'}
+[0.094154] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//rviz\n'}
+[0.094212] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//rviz/urdf_config.rviz\n'}
+[0.094267] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//config\n'}
+[0.094330] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//config/map_server_params.yaml\n'}
+[0.094390] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//config/gaz_ros2_ctl_use_sim.yaml\n'}
+[0.094448] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//config/diff_drive_controller.yaml\n'}
+[0.094506] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//config/ackermann_controll.yaml\n'}
+[0.094584] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description//config/mapper_params_online_async.yaml\n'}
+[0.094693] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/ament_index/resource_index/package_run_dependencies/my_robot_description\n'}
+[0.094756] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/ament_index/resource_index/parent_prefix_path/my_robot_description\n'}
+[0.094877] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description/environment/ament_prefix_path.sh\n'}
+[0.094954] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description/environment/ament_prefix_path.dsv\n'}
+[0.095037] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description/environment/path.sh\n'}
+[0.095096] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description/environment/path.dsv\n'}
+[0.095163] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description/local_setup.bash\n'}
+[0.095220] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description/local_setup.sh\n'}
+[0.095276] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description/local_setup.zsh\n'}
+[0.095332] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description/local_setup.dsv\n'}
+[0.095396] (my_robot_description) StdoutLine: {'line': b'-- Installing: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description/package.dsv\n'}
+[0.095452] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/ament_index/resource_index/packages/my_robot_description\n'}
+[0.095507] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description/cmake/my_robot_descriptionConfig.cmake\n'}
+[0.095558] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description/cmake/my_robot_descriptionConfig-version.cmake\n'}
+[0.095610] (my_robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/farog/ros2_ws/install/my_robot_description/share/my_robot_description/package.xml\n'}
+[0.098271] (my_robot_description) CommandEnded: {'returncode': 0}
+[0.099462] (-) TimerEvent: {}
+[0.192353] (my_robot_description) JobEnded: {'identifier': 'my_robot_description', 'rc': 0}
+[0.193153] (my_robot_bringup) JobStarted: {'identifier': 'my_robot_bringup'}
+[0.199658] (-) TimerEvent: {}
+[0.227421] (my_robot_bringup) JobProgress: {'identifier': 'my_robot_bringup', 'progress': 'cmake'}
+[0.228221] (my_robot_bringup) JobProgress: {'identifier': 'my_robot_bringup', 'progress': 'build'}
+[0.228341] (my_robot_bringup) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/farog/ros2_ws/build/my_robot_bringup', '--', '-j20', '-l20'], 'cwd': '/home/farog/ros2_ws/build/my_robot_bringup', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'farog'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/farog'), ('OLDPWD', '/home/farog'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '2785'), ('SYSTEMD_EXEC_PID', '3242'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '351565'), ('COLCON_PREFIX_PATH', '/home/farog/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'farog'), ('JOURNAL_STREAM', '8:24774'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'farog'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/farog/ros2_ws/src/my_robot_description/meshes/:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/farog/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/nbc135:@/tmp/.ICE-unix/3224,unix/nbc135:/tmp/.ICE-unix/3224'), ('INVOCATION_ID', '1d0f19a16bf742ac9166edc7f7b19a3c'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/farog/ros2_ws/install/turtlebot3_simulations:/home/farog/ros2_ws/install/turtlebot3_gazebo:/home/farog/ros2_ws/install/turtlebot3_fake_node:/home/farog/ros2_ws/install/my_robot_bringup:/home/farog/ros2_ws/install/my_robot_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:840748aa-5d23-4037-a45d-dc0488a142a4'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/farog/ros2_ws/build/my_robot_bringup'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/farog/ros2_ws/install/my_robot_description:/home/farog/ros2_ws/install/turtlebot3_simulations:/home/farog/ros2_ws/install/turtlebot3_gazebo:/home/farog/ros2_ws/install/turtlebot3_fake_node:/home/farog/ros2_ws/install/my_robot_bringup:/opt/ros/humble')]), 'shell': False}
+[0.293611] (my_robot_bringup) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[0.294142] (my_robot_bringup) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (PkgConfig)\n'}
+[0.294307] (my_robot_bringup) StderrLine: {'line': b'  does not match the name of the calling package (gazebo).  This can lead to\n'}
+[0.294433] (my_robot_bringup) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[0.294570] (my_robot_bringup) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[0.294694] (my_robot_bringup) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.294818] (my_robot_bringup) StderrLine: {'line': b'  /usr/share/cmake-3.22/Modules/FindPkgConfig.cmake:99 (find_package_handle_standard_args)\n'}
+[0.294936] (my_robot_bringup) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:72 (include)\n'}
+[0.295051] (my_robot_bringup) StderrLine: {'line': b'  CMakeLists.txt:8 (find_package)\n'}
+[0.295160] (my_robot_bringup) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.295282] (my_robot_bringup) StderrLine: {'line': b'\x1b[0m\n'}
+[0.295402] (my_robot_bringup) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[0.299765] (-) TimerEvent: {}
+[0.308487] (my_robot_bringup) StdoutLine: {'line': b"-- Checking for module 'bullet>=2.82'\n"}
+[0.332390] (my_robot_bringup) StdoutLine: {'line': b'--   Found bullet, version 3.05\n'}
+[0.399909] (-) TimerEvent: {}
+[0.500352] (-) TimerEvent: {}
+[0.546242] (my_robot_bringup) StdoutLine: {'line': b'-- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") \n'}
+[0.600493] (-) TimerEvent: {}
+[0.654876] (my_robot_bringup) StdoutLine: {'line': b'-- Found assimp: /usr/include (found version "5.2.0") \n'}
+[0.700603] (-) TimerEvent: {}
+[0.749306] (my_robot_bringup) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[0.800739] (-) TimerEvent: {}
+[0.901218] (-) TimerEvent: {}
+[1.001721] (-) TimerEvent: {}
+[1.101946] (-) TimerEvent: {}
+[1.202158] (-) TimerEvent: {}
+[1.302426] (-) TimerEvent: {}
+[1.402677] (-) TimerEvent: {}
+[1.503118] (-) TimerEvent: {}
+[1.551142] (my_robot_bringup) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time \n'}
+[1.603217] (-) TimerEvent: {}
+[1.604321] (my_robot_bringup) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[1.612349] (my_robot_bringup) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.0\n'}
+[1.636945] (my_robot_bringup) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[1.643768] (my_robot_bringup) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[1.644268] (my_robot_bringup) StdoutLine: {'line': b'-- OGRE_PREFIX_WATCH changed.\n'}
+[1.650403] (my_robot_bringup) StdoutLine: {'line': b"-- Checking for module 'OGRE'\n"}
+[1.666122] (my_robot_bringup) StdoutLine: {'line': b'--   Found OGRE, version 1.9.0\n'}
+[1.703361] (-) TimerEvent: {}
+[1.733781] (my_robot_bringup) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[1.759787] (my_robot_bringup) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[1.767052] (my_robot_bringup) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[1.769807] (my_robot_bringup) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[1.769838] (my_robot_bringup) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[1.772605] (my_robot_bringup) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[1.772634] (my_robot_bringup) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[1.775432] (my_robot_bringup) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[1.775470] (my_robot_bringup) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[1.778073] (my_robot_bringup) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[1.778102] (my_robot_bringup) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[1.780917] (my_robot_bringup) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[1.780950] (my_robot_bringup) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[1.783542] (my_robot_bringup) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[1.803434] (-) TimerEvent: {}
+[1.840470] (my_robot_bringup) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.0\n'}
+[1.844127] (my_robot_bringup) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[1.844371] (my_robot_bringup) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[1.854915] (my_robot_bringup) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[1.861768] (my_robot_bringup) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[1.864421] (my_robot_bringup) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[1.878262] (my_robot_bringup) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[1.894406] (my_robot_bringup) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[1.899691] (my_robot_bringup) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[1.903532] (-) TimerEvent: {}
+[1.909992] (my_robot_bringup) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[1.964720] (my_robot_bringup) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[1.978013] (my_robot_bringup) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[1.979529] (my_robot_bringup) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[1.999794] (my_robot_bringup) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.0\n'}
+[2.003681] (-) TimerEvent: {}
+[2.005415] (my_robot_bringup) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[2.013159] (my_robot_bringup) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[2.057402] (my_robot_bringup) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[2.067314] (my_robot_bringup) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[2.068240] (my_robot_bringup) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[2.070718] (my_robot_bringup) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[2.072140] (my_robot_bringup) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[2.074205] (my_robot_bringup) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[2.086119] (my_robot_bringup) StdoutLine: {'line': b'-- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") \n'}
+[2.087526] (my_robot_bringup) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[2.090579] (my_robot_bringup) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[2.090866] (my_robot_bringup) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[2.091071] (my_robot_bringup) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.0\n'}
+[2.096152] (my_robot_bringup) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[2.096499] (my_robot_bringup) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[2.103762] (-) TimerEvent: {}
+[2.143424] (my_robot_bringup) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[2.153419] (my_robot_bringup) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[2.159923] (my_robot_bringup) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[2.182162] (my_robot_bringup) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[2.203901] (-) TimerEvent: {}
+[2.205238] (my_robot_bringup) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[2.229454] (my_robot_bringup) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[2.300214] (my_robot_bringup) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[2.301585] (my_robot_bringup) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[2.302678] (my_robot_bringup) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.0\n'}
+[2.303743] (my_robot_bringup) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[2.303913] (-) TimerEvent: {}
+[2.337855] (my_robot_bringup) StdoutLine: {'line': b'-- Found gazebo_ros: 3.7.0 (/opt/ros/humble/share/gazebo_ros/cmake)\n'}
+[2.404001] (-) TimerEvent: {}
+[2.504203] (-) TimerEvent: {}
+[2.604493] (-) TimerEvent: {}
+[2.705003] (-) TimerEvent: {}
+[2.805440] (-) TimerEvent: {}
+[2.905934] (-) TimerEvent: {}
+[2.982067] (my_robot_bringup) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.997250] (my_robot_bringup) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[3.006029] (-) TimerEvent: {}
+[3.043519] (my_robot_bringup) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[3.106133] (-) TimerEvent: {}
+[3.108869] (my_robot_bringup) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.201817] (my_robot_bringup) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.206233] (-) TimerEvent: {}
+[3.306526] (-) TimerEvent: {}
+[3.343833] (my_robot_bringup) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[3.350203] (my_robot_bringup) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[3.406665] (-) TimerEvent: {}
+[3.440842] (my_robot_bringup) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[3.472605] (my_robot_bringup) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[3.506734] (-) TimerEvent: {}
+[3.606919] (-) TimerEvent: {}
+[3.659242] (my_robot_bringup) StdoutLine: {'line': b'-- Gazebo version: 11.10\n'}
+[3.659363] (my_robot_bringup) StdoutLine: {'line': b"-- Checking for module 'tbb'\n"}
+[3.666714] (my_robot_bringup) StdoutLine: {'line': b'--   Found tbb, version 2021.5.0\n'}
+[3.706350] (my_robot_bringup) StdoutLine: {'line': b'-- Found gazebo_ros_pkgs: 3.7.0 (/opt/ros/humble/share/gazebo_ros_pkgs/cmake)\n'}
+[3.707010] (-) TimerEvent: {}
+[3.709390] (my_robot_bringup) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[3.807090] (-) TimerEvent: {}
+[3.836407] (my_robot_bringup) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.3 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[3.905766] (my_robot_bringup) StdoutLine: {'line': b'-- Found ackermann_msgs: 2.0.2 (/opt/ros/humble/share/ackermann_msgs/cmake)\n'}
+[3.907181] (-) TimerEvent: {}
+[3.956582] (my_robot_bringup) StdoutLine: {'line': b'-- Found tf2: 0.25.4 (/opt/ros/humble/share/tf2/cmake)\n'}
+[3.980558] (my_robot_bringup) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.4 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[4.007269] (-) TimerEvent: {}
+[4.107521] (-) TimerEvent: {}
+[4.207813] (-) TimerEvent: {}
+[4.308091] (-) TimerEvent: {}
+[4.336386] (my_robot_bringup) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:42 (message):\n'}
+[4.336553] (my_robot_bringup) StderrLine: {'line': b'  ament_target_dependencies() the first argument must be a valid target name\n'}
+[4.336604] (my_robot_bringup) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[4.336642] (my_robot_bringup) StderrLine: {'line': b'  CMakeLists.txt:23 (ament_target_dependencies)\n'}
+[4.336675] (my_robot_bringup) StderrLine: {'line': b'\n'}
+[4.336709] (my_robot_bringup) StderrLine: {'line': b'\x1b[0m\n'}
+[4.336742] (my_robot_bringup) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[4.336782] (my_robot_bringup) StdoutLine: {'line': b'See also "/home/farog/ros2_ws/build/my_robot_bringup/CMakeFiles/CMakeOutput.log".\n'}
+[4.348567] (my_robot_bringup) StderrLine: {'line': b'gmake: *** [Makefile:226: cmake_check_build_system] Error 1\n'}
+[4.349604] (my_robot_bringup) CommandEnded: {'returncode': 2}
+[4.408279] (-) TimerEvent: {}
+[4.431903] (my_robot_bringup) JobEnded: {'identifier': 'my_robot_bringup', 'rc': 2}
+[4.442380] (-) EventReactorShutdown: {}

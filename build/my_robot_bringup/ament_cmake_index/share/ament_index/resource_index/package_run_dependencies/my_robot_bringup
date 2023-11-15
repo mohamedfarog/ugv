@@ -1,1 +1,1 @@
-my_robot_description;robot_state_publisher;gazebo_ros;ament_lint_auto;ament_lint_common
+my_robot_description;robot_state_publisher;gazebo_ros;nav2_simple_commander;nav2_bringup;nav2_common;ament_lint_auto;ament_lint_common

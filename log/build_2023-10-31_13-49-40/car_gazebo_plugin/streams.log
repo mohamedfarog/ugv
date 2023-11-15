@@ -1,0 +1,150 @@
+[0.031s] Invoking command in '/home/farog/ros2_ws/build/car_gazebo_plugin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/farog/ros2_ws/src/car_gazebo_plugin -DCMAKE_INSTALL_PREFIX=/home/farog/ros2_ws/install/car_gazebo_plugin
+[0.138s] -- The C compiler identification is GNU 11.4.0
+[0.224s] -- The CXX compiler identification is GNU 11.4.0
+[0.232s] -- Detecting C compiler ABI info
+[0.281s] -- Detecting C compiler ABI info - done
+[0.285s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.285s] -- Detecting C compile features
+[0.285s] -- Detecting C compile features - done
+[0.288s] -- Detecting CXX compiler ABI info
+[0.332s] -- Detecting CXX compiler ABI info - done
+[0.336s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.336s] -- Detecting CXX compile features
+[0.336s] -- Detecting CXX compile features - done
+[0.343s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[0.343s] [33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[0.344s]   The package name passed to `find_package_handle_standard_args` (PkgConfig)
+[0.344s]   does not match the name of the calling package (gazebo).  This can lead to
+[0.344s]   problems in calling code that expects `find_package` result variables
+[0.344s]   (e.g., `_FOUND`) to follow a certain pattern.
+[0.344s] Call Stack (most recent call first):
+[0.344s]   /usr/share/cmake-3.22/Modules/FindPkgConfig.cmake:99 (find_package_handle_standard_args)
+[0.344s]   /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:72 (include)
+[0.344s]   CMakeLists.txt:9 (find_package)
+[0.344s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.344s] [0m
+[0.346s] -- Checking for module 'bullet>=2.82'
+[0.353s] --   Found bullet, version 3.05
+[0.416s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[0.443s] -- Found assimp: /usr/include (found version "5.2.0") 
+[0.465s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[0.576s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[0.595s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[0.598s] -- Looking for ignition-math6 -- found version 6.15.0
+[0.606s] -- Searching for dependencies of ignition-math6
+[0.608s] -- Looking for OGRE...
+[0.608s] -- OGRE_PREFIX_WATCH changed.
+[0.611s] -- Checking for module 'OGRE'
+[0.616s] --   Found OGRE, version 1.9.0
+[0.632s] -- Found Ogre Ghadamon (1.9.0)
+[0.638s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[0.643s] -- Looking for OGRE_Paging...
+[0.647s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[0.647s] -- Looking for OGRE_Terrain...
+[0.650s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[0.650s] -- Looking for OGRE_Property...
+[0.652s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[0.652s] -- Looking for OGRE_RTShaderSystem...
+[0.655s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[0.655s] -- Looking for OGRE_Volume...
+[0.658s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[0.658s] -- Looking for OGRE_Overlay...
+[0.661s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[0.721s] -- Looking for ignition-math6 -- found version 6.15.0
+[0.723s] -- Looking for ignition-transport8 -- found version 8.2.1
+[0.723s] -- Searching for dependencies of ignition-transport8
+[0.733s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[0.739s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[0.741s] -- Checking for module 'libzmq >= 4'
+[0.749s] --   Found libzmq , version 4.3.4
+[0.766s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[0.770s] -- Checking for module 'uuid'
+[0.776s] --   Found uuid, version 2.37.2
+[0.794s] -- Found UUID: TRUE  
+[0.796s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[0.796s] -- Searching for dependencies of ignition-msgs5
+[0.806s] -- Looking for ignition-math6 -- found version 6.15.0
+[0.809s] -- Checking for module 'tinyxml2'
+[0.815s] --   Found tinyxml2, version 9.0.0
+[0.831s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[0.833s] -- Looking for ignition-common3 -- found version 3.14.0
+[0.833s] -- Searching for dependencies of ignition-common3
+[0.834s] -- Looking for dlfcn.h - found
+[0.834s] -- Looking for libdl - found
+[0.835s] -- Found DL: TRUE  
+[0.843s] -- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") 
+[0.843s] -- Searching for <ignition-common3> component [graphics]
+[0.845s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[0.845s] -- Searching for dependencies of ignition-common3-graphics
+[0.845s] -- Looking for ignition-math6 -- found version 6.15.0
+[0.848s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[0.848s] -- Searching for dependencies of ignition-fuel_tools4
+[0.886s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[0.891s] -- Checking for module 'jsoncpp'
+[0.898s] --   Found jsoncpp, version 1.9.5
+[0.915s] -- Found JSONCPP: TRUE  
+[0.919s] -- Checking for module 'libzip'
+[0.925s] --   Found libzip, version 1.7.3
+[0.940s] -- Found ZIP: TRUE  
+[0.940s] -- Looking for ignition-common3 -- found version 3.14.0
+[0.940s] -- Looking for ignition-math6 -- found version 6.15.0
+[0.941s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[0.945s] -- Found gazebo_ros: 3.7.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[1.036s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[1.127s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.131s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.140s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.152s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.167s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.218s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.221s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[1.252s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.259s] -- Found Threads: TRUE  
+[1.360s] -- Gazebo version: 11.10
+[1.360s] -- Checking for module 'tbb'
+[1.367s] --   Found tbb, version 2021.5.0
+[1.386s] -- Found gazebo_ros_pkgs: 3.7.0 (/opt/ros/humble/share/gazebo_ros_pkgs/cmake)
+[1.388s] -- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.466s] -- Found nav_msgs: 4.2.3 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.516s] -- Found ackermann_msgs: 2.0.2 (/opt/ros/humble/share/ackermann_msgs/cmake)
+[1.545s] -- Found tf2: 0.25.4 (/opt/ros/humble/share/tf2/cmake)
+[1.555s] -- Found tf2_ros: 0.25.4 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.799s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.861s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.861s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/farog/ros2_ws/src/car_gazebo_plugin/include>
+[1.861s] -- Configured cppcheck exclude dirs and/or files: 
+[1.862s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.862s] -- Configured cpplint exclude dirs and/or files: 
+[1.863s] -- Added test 'lint_cmake' to check CMake code style
+[1.863s] -- Added test 'uncrustify' to check C / C++ code style
+[1.863s] -- Configured uncrustify additional arguments: 
+[1.864s] -- Added test 'xmllint' to check XML markup files
+[1.864s] -- Configuring done
+[1.888s] -- Generating done
+[1.889s] -- Build files have been written to: /home/farog/ros2_ws/build/car_gazebo_plugin
+[1.897s] Invoked command in '/home/farog/ros2_ws/build/car_gazebo_plugin' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/farog/ros2_ws/src/car_gazebo_plugin -DCMAKE_INSTALL_PREFIX=/home/farog/ros2_ws/install/car_gazebo_plugin
+[1.897s] Invoking command in '/home/farog/ros2_ws/build/car_gazebo_plugin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/farog/ros2_ws/build/car_gazebo_plugin -- -j20 -l20
+[1.929s] [ 50%] [32mBuilding CXX object CMakeFiles/car_gazebo_plugin.dir/src/car_gazebo_plugin.cpp.o[0m
+[14.308s] [100%] [32m[1mLinking CXX shared library libcar_gazebo_plugin.so[0m
+[15.038s] [100%] Built target car_gazebo_plugin
+[15.044s] Invoked command in '/home/farog/ros2_ws/build/car_gazebo_plugin' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/farog/ros2_ws/build/car_gazebo_plugin -- -j20 -l20
+[15.057s] Invoking command in '/home/farog/ros2_ws/build/car_gazebo_plugin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/farog/ros2_ws/build/car_gazebo_plugin
+[15.062s] -- Install configuration: ""
+[15.062s] -- Installing: /home/farog/ros2_ws/install/car_gazebo_plugin/share/car_gazebo_plugin/libcar_gazebo_plugin.so
+[15.072s] -- Set runtime path of "/home/farog/ros2_ws/install/car_gazebo_plugin/share/car_gazebo_plugin/libcar_gazebo_plugin.so" to ""
+[15.072s] -- Installing: /home/farog/ros2_ws/install/car_gazebo_plugin/share/ament_index/resource_index/package_run_dependencies/car_gazebo_plugin
+[15.072s] -- Installing: /home/farog/ros2_ws/install/car_gazebo_plugin/share/ament_index/resource_index/parent_prefix_path/car_gazebo_plugin
+[15.072s] -- Up-to-date: /home/farog/ros2_ws/install/car_gazebo_plugin/share/car_gazebo_plugin/environment/ament_prefix_path.sh
+[15.072s] -- Installing: /home/farog/ros2_ws/install/car_gazebo_plugin/share/car_gazebo_plugin/environment/ament_prefix_path.dsv
+[15.072s] -- Up-to-date: /home/farog/ros2_ws/install/car_gazebo_plugin/share/car_gazebo_plugin/environment/path.sh
+[15.072s] -- Installing: /home/farog/ros2_ws/install/car_gazebo_plugin/share/car_gazebo_plugin/environment/path.dsv
+[15.072s] -- Installing: /home/farog/ros2_ws/install/car_gazebo_plugin/share/car_gazebo_plugin/local_setup.bash
+[15.073s] -- Installing: /home/farog/ros2_ws/install/car_gazebo_plugin/share/car_gazebo_plugin/local_setup.sh
+[15.073s] -- Installing: /home/farog/ros2_ws/install/car_gazebo_plugin/share/car_gazebo_plugin/local_setup.zsh
+[15.073s] -- Installing: /home/farog/ros2_ws/install/car_gazebo_plugin/share/car_gazebo_plugin/local_setup.dsv
+[15.073s] -- Installing: /home/farog/ros2_ws/install/car_gazebo_plugin/share/car_gazebo_plugin/package.dsv
+[15.073s] -- Installing: /home/farog/ros2_ws/install/car_gazebo_plugin/share/ament_index/resource_index/packages/car_gazebo_plugin
+[15.073s] -- Installing: /home/farog/ros2_ws/install/car_gazebo_plugin/share/car_gazebo_plugin/cmake/car_gazebo_pluginConfig.cmake
+[15.073s] -- Installing: /home/farog/ros2_ws/install/car_gazebo_plugin/share/car_gazebo_plugin/cmake/car_gazebo_pluginConfig-version.cmake
+[15.073s] -- Up-to-date: /home/farog/ros2_ws/install/car_gazebo_plugin/share/car_gazebo_plugin/package.xml
+[15.074s] Invoked command in '/home/farog/ros2_ws/build/car_gazebo_plugin' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/farog/ros2_ws/build/car_gazebo_plugin

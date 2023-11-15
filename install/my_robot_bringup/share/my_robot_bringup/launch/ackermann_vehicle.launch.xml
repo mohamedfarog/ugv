@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+
+<launch>
+    <let name="urdf_path" 
+    value="$(find-pkg-share my_robot_description)/urdf/ugv.urdf" />
+<let name="rviz_config_path"
+value="$(find-pkg-share my_robot_bringup)/rviz/urdf_config.rviz" />
+
+
+<node pkg="robot_state_publisher" exec="robot_state_publisher">
+   <param name="robot_description" 
+          value="$(command 'xacro $(var urdf_path)')"/>    
+</node>
+
+
+
+   <node pkg="joint_state_publisher_gui" exec="joint_state_publisher_gui" />
+
+
+<include file="$(find-pkg-share gazebo_ros)/launch/gazebo.launch.py">
+   <!-- <arg name="world" value="$(find-pkg-share my_robot_bringup)/worlds/my_world.world" /> -->
+   <arg name="world" value="$(find-pkg-share my_robot_bringup)/worlds/house.world" />
+    <arg name="use_sim_time" value="true"/>
+    
+   <!-- <arg name="world" value="$(find-pkg-share my_robot_bringup)/worlds/desert.world" /> -->
+
+</include>
+<node pkg="gazebo_ros" exec="spawn_entity.py"
+         args="-topic robot_description -entity my_robot" />
+
+
+<node pkg="rviz2" exec="rviz2" output="screen" 
+     args="-d $(var rviz_config_path)" /> 
+
+      <node name="controller_spawner" pkg="controller_manager" type="spawner"
+            args="$(find-pkg-share my_robot_bringup)/config/em_3905_joint_ctrlr_params.yaml"/>
+  
+      <node name="ackermann_controller" pkg="my_robot_bringup"
+            type="ackermann_controller">
+        <param name="cmd_timeout" value="$(arg cmd_timeout)"/>
+        <!-- <rosparam file="$(find-pkg-share my_robot_bringup)/config/em_3905_ackermann_ctrlr_params.yaml" command="load"/> -->
+      </node>
+    
+  </launch>

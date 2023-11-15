@@ -7,9 +7,11 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(rclpy REQUIRED)
 
 install(
-  DIRECTORY launch rviz worlds
+  DIRECTORY launch rviz worlds config maps behavior_trees params 
   DESTINATION share/${PROJECT_NAME}/
 )
 

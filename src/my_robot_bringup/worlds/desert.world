@@ -1,4 +1,3 @@
-<?xml version="1.0"?>
 <sdf version='1.7'>
   <world name='default'>
     <light name='sun' type='directional'>
@@ -93,15 +92,15 @@
     <model name='my_robot'>
       <link name='base_footprint'>
         <inertial>
-          <pose>0.011509 0 0.132075 0 -0 0</pose>
-          <mass>5.3</mass>
+          <pose>-0.007222 0 0.137037 0 -0 0</pose>
+          <mass>5.4</mass>
           <inertia>
-            <ixx>0.719657</ixx>
-            <ixy>0</ixy>
-            <ixz>-0.0087434</ixz>
-            <iyy>0.719078</iyy>
-            <iyz>0</iyz>
-            <izz>0.533635</izz>
+            <ixx>0.726827</ixx>
+            <ixy>2.51541e-20</ixy>
+            <ixz>0.0178748</ixz>
+            <iyy>0.812801</iyy>
+            <iyz>-1.66183e-20</iyz>
+            <izz>0.620427</izz>
           </inertia>
         </inertial>
         <collision name='base_footprint_fixed_joint_lump__base_link_collision'>
@@ -126,8 +125,8 @@
             </friction>
           </surface>
         </collision>
-        <collision name='base_footprint_fixed_joint_lump__camera_link_collision_1'>
-          <pose>0.8 0 0.4 0 -0 0</pose>
+        <collision name='base_footprint_fixed_joint_lump__back_camera_link_collision_1'>
+          <pose>-0.96 0 0.4 3.14159 -0.058407 3.14159</pose>
           <geometry>
             <box>
               <size>0.02 0.2 0.12</size>
@@ -147,7 +146,28 @@
           </surface>
           <max_contacts>10</max_contacts>
         </collision>
-        <collision name='base_footprint_fixed_joint_lump__laser_frame1_collision_2'>
+        <collision name='base_footprint_fixed_joint_lump__front_camera_link_collision_2'>
+          <pose>0.76 0 0.4 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.02 0.2 0.12</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <collision name='base_footprint_fixed_joint_lump__laser_frame1_collision_3'>
           <pose>-0.79 0 0.8 0 -0 0</pose>
           <geometry>
             <cylinder>
@@ -169,7 +189,7 @@
           </surface>
           <max_contacts>10</max_contacts>
         </collision>
-        <collision name='base_footprint_fixed_joint_lump__laser_frame_collision_3'>
+        <collision name='base_footprint_fixed_joint_lump__laser_frame_collision_4'>
           <pose>0.6 0 0.8 0 -0 0</pose>
           <geometry>
             <cylinder>
@@ -200,8 +220,8 @@
             </mesh>
           </geometry>
         </visual>
-        <visual name='base_footprint_fixed_joint_lump__camera_link_visual_1'>
-          <pose>0.8 0 0.4 0 -0 0</pose>
+        <visual name='base_footprint_fixed_joint_lump__back_camera_link_visual_1'>
+          <pose>-0.96 0 0.4 3.14159 -0.058407 3.14159</pose>
           <geometry>
             <box>
               <size>0.02 0.2 0.12</size>
@@ -214,7 +234,21 @@
             </script>
           </material>
         </visual>
-        <visual name='base_footprint_fixed_joint_lump__laser_frame1_visual_2'>
+        <visual name='base_footprint_fixed_joint_lump__front_camera_link_visual_2'>
+          <pose>0.76 0 0.4 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.02 0.2 0.12</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='base_footprint_fixed_joint_lump__laser_frame1_visual_3'>
           <pose>-0.79 0 0.8 0 -0 0</pose>
           <geometry>
             <cylinder>
@@ -229,7 +263,7 @@
             </script>
           </material>
         </visual>
-        <visual name='base_footprint_fixed_joint_lump__laser_frame_visual_3'>
+        <visual name='base_footprint_fixed_joint_lump__laser_frame_visual_4'>
           <pose>0.6 0 0.8 0 -0 0</pose>
           <geometry>
             <cylinder>
@@ -244,13 +278,256 @@
             </script>
           </material>
         </visual>
+        <visual name='base_footprint_fixed_joint_lump__base_laser_link_range10_visual_5'>
+          <pose>-0.3 -0.52 0.55 0 -0 1.5</pose>
+          <geometry>
+            <sphere>
+              <radius>0.05</radius>
+            </sphere>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='base_footprint_fixed_joint_lump__base_laser_link_range11_visual_6'>
+          <pose>-0.65 -0.52 0.55 0 0 -1.5</pose>
+          <geometry>
+            <sphere>
+              <radius>0.05</radius>
+            </sphere>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='base_footprint_fixed_joint_lump__base_laser_link_range12_visual_7'>
+          <pose>0.35 0.52 0.55 0 -0 1.5</pose>
+          <geometry>
+            <sphere>
+              <radius>0.05</radius>
+            </sphere>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='base_footprint_fixed_joint_lump__base_laser_link_range13_visual_8'>
+          <pose>0.05 0.52 0.55 0 -0 1.5</pose>
+          <geometry>
+            <sphere>
+              <radius>0.05</radius>
+            </sphere>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='base_footprint_fixed_joint_lump__base_laser_link_range14_visual_9'>
+          <pose>-0.3 0.52 0.55 0 -0 1.5</pose>
+          <geometry>
+            <sphere>
+              <radius>0.05</radius>
+            </sphere>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='base_footprint_fixed_joint_lump__base_laser_link_range15_visual_10'>
+          <pose>-0.65 0.52 0.55 0 -0 1.5</pose>
+          <geometry>
+            <sphere>
+              <radius>0.05</radius>
+            </sphere>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='base_footprint_fixed_joint_lump__base_laser_link_range1_visual_11'>
+          <pose>0.75 0.35 0.55 0 -0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.05</radius>
+            </sphere>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='base_footprint_fixed_joint_lump__base_laser_link_range2_visual_12'>
+          <pose>0.75 0.12 0.55 0 -0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.05</radius>
+            </sphere>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='base_footprint_fixed_joint_lump__base_laser_link_range3_visual_13'>
+          <pose>0.75 -0.12 0.55 0 -0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.05</radius>
+            </sphere>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='base_footprint_fixed_joint_lump__base_laser_link_range4_visual_14'>
+          <pose>-0.98 -0.35 0.55 0 -0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.05</radius>
+            </sphere>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='base_footprint_fixed_joint_lump__base_laser_link_range5_visual_15'>
+          <pose>-0.98 0.35 0.55 0 -0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.05</radius>
+            </sphere>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='base_footprint_fixed_joint_lump__base_laser_link_range6_visual_16'>
+          <pose>-0.98 0.12 0.55 0 -0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.05</radius>
+            </sphere>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='base_footprint_fixed_joint_lump__base_laser_link_range7_visual_17'>
+          <pose>-0.98 -0.12 0.55 0 -0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.05</radius>
+            </sphere>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='base_footprint_fixed_joint_lump__base_laser_link_range8_visual_18'>
+          <pose>0.35 -0.52 0.55 0 0 -1.5</pose>
+          <geometry>
+            <sphere>
+              <radius>0.05</radius>
+            </sphere>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='base_footprint_fixed_joint_lump__base_laser_link_range9_visual_19'>
+          <pose>0.05 -0.52 0.55 0 0 -1.5</pose>
+          <geometry>
+            <sphere>
+              <radius>0.05</radius>
+            </sphere>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='base_footprint_fixed_joint_lump__base_laser_link_range_visual_20'>
+          <pose>0.75 -0.35 0.55 0 -0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>0.05</radius>
+            </sphere>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <sensor name='camera_sensor' type='camera'>
+          <visualize>0</visualize>
+          <update_rate>10</update_rate>
+          <plugin name='camera_controller1' filename='libgazebo_ros_camera.so'>
+            <frame_name>back_camera_link</frame_name>
+          </plugin>
+          <pose>-0.96 0 0.4 3.14159 -0.058407 3.14159</pose>
+          <camera>
+            <horizontal_fov>1.047</horizontal_fov>
+            <image>
+              <width>320</width>
+              <height>240</height>
+            </image>
+            <clip>
+              <near>0.1</near>
+              <far>100</far>
+            </clip>
+          </camera>
+        </sensor>
         <sensor name='camera_sensor' type='camera'>
           <visualize>1</visualize>
           <update_rate>10</update_rate>
           <plugin name='camera_controller' filename='libgazebo_ros_camera.so'>
-            <frame_name>camera_link</frame_name>
+            <frame_name>front_camera_link</frame_name>
           </plugin>
-          <pose>0.8 0 0.4 0 -0 0</pose>
+          <pose>0.76 0 0.4 0 -0 0</pose>
           <camera>
             <horizontal_fov>1.047</horizontal_fov>
             <image>
@@ -264,7 +541,7 @@
           </camera>
         </sensor>
         <sensor name='laser' type='ray'>
-          <visualize>1</visualize>
+          <visualize>0</visualize>
           <update_rate>10</update_rate>
           <ray>
             <scan>
@@ -295,6 +572,662 @@
           </plugin>
           <pose>0.6 0 0.8 0 -0 0</pose>
         </sensor>
+        <sensor name='base_laser_link_range10' type='ray'>
+          <always_on>1</always_on>
+          <visualize>0</visualize>
+          <update_rate>50</update_rate>
+          <ray>
+            <scan>
+              <horizontal>
+                <samples>5</samples>
+                <resolution>1</resolution>
+                <min_angle>-0.18</min_angle>
+                <max_angle>0.18</max_angle>
+              </horizontal>
+              <vertical>
+                <samples>5</samples>
+                <resolution>1</resolution>
+                <min_angle>-0.01</min_angle>
+                <max_angle>0.01</max_angle>
+              </vertical>
+            </scan>
+            <range>
+              <min>0.02</min>
+              <max>10</max>
+              <resolution>0.01</resolution>
+            </range>
+            <noise>
+              <type>gaussian</type>
+              <mean>0</mean>
+              <stddev>0.01</stddev>
+            </noise>
+          </ray>
+          <plugin name='bytes_ultrasound10' filename='libgazebo_ros_ray_sensor.so'>
+            <ros>
+              <namespace>distance</namespace>
+              <argument>~/out:=range11</argument>
+            </ros>
+            <output_type>sensor_msgs/Range</output_type>
+            <radiation_type>ultrasound</radiation_type>
+            <frame_name>base_laser_link_range10</frame_name>
+          </plugin>
+          <pose>-0.3 -0.52 0.55 0 -0 1.5</pose>
+        </sensor>
+        <sensor name='base_laser_link_range11' type='ray'>
+          <always_on>1</always_on>
+          <visualize>0</visualize>
+          <update_rate>50</update_rate>
+          <ray>
+            <scan>
+              <horizontal>
+                <samples>5</samples>
+                <resolution>1</resolution>
+                <min_angle>-0.18</min_angle>
+                <max_angle>0.18</max_angle>
+              </horizontal>
+              <vertical>
+                <samples>5</samples>
+                <resolution>1</resolution>
+                <min_angle>-0.01</min_angle>
+                <max_angle>0.01</max_angle>
+              </vertical>
+            </scan>
+            <range>
+              <min>0.02</min>
+              <max>10</max>
+              <resolution>0.01</resolution>
+            </range>
+            <noise>
+              <type>gaussian</type>
+              <mean>0</mean>
+              <stddev>0.01</stddev>
+            </noise>
+          </ray>
+          <plugin name='bytes_ultrasound11' filename='libgazebo_ros_ray_sensor.so'>
+            <ros>
+              <namespace>distance</namespace>
+              <argument>~/out:=range12</argument>
+            </ros>
+            <output_type>sensor_msgs/Range</output_type>
+            <radiation_type>ultrasound</radiation_type>
+            <frame_name>base_laser_link_range11</frame_name>
+          </plugin>
+          <pose>-0.65 -0.52 0.55 0 0 -1.5</pose>
+        </sensor>
+        <sensor name='base_laser_link_range12' type='ray'>
+          <always_on>1</always_on>
+          <visualize>0</visualize>
+          <update_rate>50</update_rate>
+          <ray>
+            <scan>
+              <horizontal>
+                <samples>5</samples>
+                <resolution>1</resolution>
+                <min_angle>-0.18</min_angle>
+                <max_angle>0.18</max_angle>
+              </horizontal>
+              <vertical>
+                <samples>5</samples>
+                <resolution>1</resolution>
+                <min_angle>-0.01</min_angle>
+                <max_angle>0.01</max_angle>
+              </vertical>
+            </scan>
+            <range>
+              <min>0.02</min>
+              <max>10</max>
+              <resolution>0.01</resolution>
+            </range>
+            <noise>
+              <type>gaussian</type>
+              <mean>0</mean>
+              <stddev>0.01</stddev>
+            </noise>
+          </ray>
+          <plugin name='bytes_ultrasound12' filename='libgazebo_ros_ray_sensor.so'>
+            <ros>
+              <namespace>distance</namespace>
+              <argument>~/out:=range13</argument>
+            </ros>
+            <output_type>sensor_msgs/Range</output_type>
+            <radiation_type>ultrasound</radiation_type>
+            <frame_name>base_laser_link_range12</frame_name>
+          </plugin>
+          <pose>0.35 0.52 0.55 0 -0 1.5</pose>
+        </sensor>
+        <sensor name='base_laser_link_range13' type='ray'>
+          <always_on>1</always_on>
+          <visualize>0</visualize>
+          <update_rate>50</update_rate>
+          <ray>
+            <scan>
+              <horizontal>
+                <samples>5</samples>
+                <resolution>1</resolution>
+                <min_angle>-0.18</min_angle>
+                <max_angle>0.18</max_angle>
+              </horizontal>
+              <vertical>
+                <samples>5</samples>
+                <resolution>1</resolution>
+                <min_angle>-0.01</min_angle>
+                <max_angle>0.01</max_angle>
+              </vertical>
+            </scan>
+            <range>
+              <min>0.02</min>
+              <max>10</max>
+              <resolution>0.01</resolution>
+            </range>
+            <noise>
+              <type>gaussian</type>
+              <mean>0</mean>
+              <stddev>0.01</stddev>
+            </noise>
+          </ray>
+          <plugin name='bytes_ultrasound13' filename='libgazebo_ros_ray_sensor.so'>
+            <ros>
+              <namespace>distance</namespace>
+              <argument>~/out:=range14</argument>
+            </ros>
+            <output_type>sensor_msgs/Range</output_type>
+            <radiation_type>ultrasound</radiation_type>
+            <frame_name>base_laser_link_range13</frame_name>
+          </plugin>
+          <pose>0.05 0.52 0.55 0 -0 1.5</pose>
+        </sensor>
+        <sensor name='base_laser_link_range14' type='ray'>
+          <always_on>1</always_on>
+          <visualize>0</visualize>
+          <update_rate>50</update_rate>
+          <ray>
+            <scan>
+              <horizontal>
+                <samples>5</samples>
+                <resolution>1</resolution>
+                <min_angle>-0.18</min_angle>
+                <max_angle>0.18</max_angle>
+              </horizontal>
+              <vertical>
+                <samples>5</samples>
+                <resolution>1</resolution>
+                <min_angle>-0.01</min_angle>
+                <max_angle>0.01</max_angle>
+              </vertical>
+            </scan>
+            <range>
+              <min>0.02</min>
+              <max>10</max>
+              <resolution>0.01</resolution>
+            </range>
+            <noise>
+              <type>gaussian</type>
+              <mean>0</mean>
+              <stddev>0.01</stddev>
+            </noise>
+          </ray>
+          <plugin name='bytes_ultrasound14' filename='libgazebo_ros_ray_sensor.so'>
+            <ros>
+              <namespace>distance</namespace>
+              <argument>~/out:=range15</argument>
+            </ros>
+            <output_type>sensor_msgs/Range</output_type>
+            <radiation_type>ultrasound</radiation_type>
+            <frame_name>base_laser_link_range14</frame_name>
+          </plugin>
+          <pose>-0.3 0.52 0.55 0 -0 1.5</pose>
+        </sensor>
+        <sensor name='base_laser_link_range15' type='ray'>
+          <always_on>1</always_on>
+          <visualize>0</visualize>
+          <update_rate>50</update_rate>
+          <ray>
+            <scan>
+              <horizontal>
+                <samples>5</samples>
+                <resolution>1</resolution>
+                <min_angle>-0.18</min_angle>
+                <max_angle>0.18</max_angle>
+              </horizontal>
+              <vertical>
+                <samples>5</samples>
+                <resolution>1</resolution>
+                <min_angle>-0.01</min_angle>
+                <max_angle>0.01</max_angle>
+              </vertical>
+            </scan>
+            <range>
+              <min>0.02</min>
+              <max>10</max>
+              <resolution>0.01</resolution>
+            </range>
+            <noise>
+              <type>gaussian</type>
+              <mean>0</mean>
+              <stddev>0.01</stddev>
+            </noise>
+          </ray>
+          <plugin name='bytes_ultrasound15' filename='libgazebo_ros_ray_sensor.so'>
+            <ros>
+              <namespace>distance</namespace>
+              <argument>~/out:=range16</argument>
+            </ros>
+            <output_type>sensor_msgs/Range</output_type>
+            <radiation_type>ultrasound</radiation_type>
+            <frame_name>base_laser_link_range15</frame_name>
+          </plugin>
+          <pose>-0.65 0.52 0.55 0 -0 1.5</pose>
+        </sensor>
+        <sensor name='base_laser_link_range1' type='ray'>
+          <always_on>1</always_on>
+          <visualize>0</visualize>
+          <update_rate>50</update_rate>
+          <ray>
+            <scan>
+              <horizontal>
+                <samples>5</samples>
+                <resolution>1</resolution>
+                <min_angle>-0.18</min_angle>
+                <max_angle>0.18</max_angle>
+              </horizontal>
+              <vertical>
+                <samples>5</samples>
+                <resolution>1</resolution>
+                <min_angle>-0.01</min_angle>
+                <max_angle>0.01</max_angle>
+              </vertical>
+            </scan>
+            <range>
+              <min>0.02</min>
+              <max>8</max>
+              <resolution>0.01</resolution>
+            </range>
+            <noise>
+              <type>gaussian</type>
+              <mean>0</mean>
+              <stddev>0.01</stddev>
+            </noise>
+          </ray>
+          <plugin name='bytes_ultrasound1' filename='libgazebo_ros_ray_sensor.so'>
+            <ros>
+              <namespace>distance</namespace>
+              <argument>~/out:=range2</argument>
+            </ros>
+            <output_type>sensor_msgs/Range</output_type>
+            <radiation_type>ultrasound</radiation_type>
+            <frame_name>base_laser_link_range1</frame_name>
+          </plugin>
+          <pose>0.75 0.35 0.55 0 -0 0</pose>
+        </sensor>
+        <sensor name='base_laser_link_range2' type='ray'>
+          <always_on>1</always_on>
+          <visualize>0</visualize>
+          <update_rate>50</update_rate>
+          <ray>
+            <scan>
+              <horizontal>
+                <samples>5</samples>
+                <resolution>1</resolution>
+                <min_angle>-0.18</min_angle>
+                <max_angle>0.18</max_angle>
+              </horizontal>
+              <vertical>
+                <samples>5</samples>
+                <resolution>1</resolution>
+                <min_angle>-0.01</min_angle>
+                <max_angle>0.01</max_angle>
+              </vertical>
+            </scan>
+            <range>
+              <min>0.02</min>
+              <max>8</max>
+              <resolution>0.01</resolution>
+            </range>
+            <noise>
+              <type>gaussian</type>
+              <mean>0</mean>
+              <stddev>0.01</stddev>
+            </noise>
+          </ray>
+          <plugin name='bytes_ultrasound2' filename='libgazebo_ros_ray_sensor.so'>
+            <ros>
+              <namespace>distance</namespace>
+              <argument>~/out:=range3</argument>
+            </ros>
+            <output_type>sensor_msgs/Range</output_type>
+            <radiation_type>ultrasound</radiation_type>
+            <frame_name>base_laser_link_range2</frame_name>
+          </plugin>
+          <pose>0.75 0.12 0.55 0 -0 0</pose>
+        </sensor>
+        <sensor name='base_laser_link_range3' type='ray'>
+          <always_on>1</always_on>
+          <visualize>0</visualize>
+          <update_rate>50</update_rate>
+          <ray>
+            <scan>
+              <horizontal>
+                <samples>5</samples>
+                <resolution>1</resolution>
+                <min_angle>-0.18</min_angle>
+                <max_angle>0.18</max_angle>
+              </horizontal>
+              <vertical>
+                <samples>5</samples>
+                <resolution>1</resolution>
+                <min_angle>-0.01</min_angle>
+                <max_angle>0.01</max_angle>
+              </vertical>
+            </scan>
+            <range>
+              <min>0.02</min>
+              <max>8</max>
+              <resolution>0.01</resolution>
+            </range>
+            <noise>
+              <type>gaussian</type>
+              <mean>0</mean>
+              <stddev>0.01</stddev>
+            </noise>
+          </ray>
+          <plugin name='bytes_ultrasound3' filename='libgazebo_ros_ray_sensor.so'>
+            <ros>
+              <namespace>distance</namespace>
+              <argument>~/out:=range4</argument>
+            </ros>
+            <output_type>sensor_msgs/Range</output_type>
+            <radiation_type>ultrasound</radiation_type>
+            <frame_name>base_laser_link_range3</frame_name>
+          </plugin>
+          <pose>0.75 -0.12 0.55 0 -0 0</pose>
+        </sensor>
+        <sensor name='base_laser_link_range4' type='ray'>
+          <always_on>1</always_on>
+          <visualize>0</visualize>
+          <update_rate>50</update_rate>
+          <ray>
+            <scan>
+              <horizontal>
+                <samples>5</samples>
+                <resolution>1</resolution>
+                <min_angle>-0.18</min_angle>
+                <max_angle>0.18</max_angle>
+              </horizontal>
+              <vertical>
+                <samples>5</samples>
+                <resolution>1</resolution>
+                <min_angle>-0.01</min_angle>
+                <max_angle>0.01</max_angle>
+              </vertical>
+            </scan>
+            <range>
+              <min>0.02</min>
+              <max>-8</max>
+              <resolution>0.01</resolution>
+            </range>
+            <noise>
+              <type>gaussian</type>
+              <mean>0</mean>
+              <stddev>0.01</stddev>
+            </noise>
+          </ray>
+          <plugin name='bytes_ultrasound4' filename='libgazebo_ros_ray_sensor.so'>
+            <ros>
+              <namespace>distance</namespace>
+              <argument>~/out:=range5</argument>
+            </ros>
+            <output_type>sensor_msgs/Range</output_type>
+            <radiation_type>ultrasound</radiation_type>
+            <frame_name>base_laser_link_range4</frame_name>
+          </plugin>
+          <pose>-0.98 -0.35 0.55 0 -0 0</pose>
+        </sensor>
+        <sensor name='base_laser_link_range5' type='ray'>
+          <always_on>1</always_on>
+          <visualize>0</visualize>
+          <update_rate>50</update_rate>
+          <ray>
+            <scan>
+              <horizontal>
+                <samples>5</samples>
+                <resolution>1</resolution>
+                <min_angle>-0.18</min_angle>
+                <max_angle>0.18</max_angle>
+              </horizontal>
+              <vertical>
+                <samples>5</samples>
+                <resolution>1</resolution>
+                <min_angle>-0.01</min_angle>
+                <max_angle>0.01</max_angle>
+              </vertical>
+            </scan>
+            <range>
+              <min>0.02</min>
+              <max>-8</max>
+              <resolution>0.01</resolution>
+            </range>
+            <noise>
+              <type>gaussian</type>
+              <mean>0</mean>
+              <stddev>0.01</stddev>
+            </noise>
+          </ray>
+          <plugin name='bytes_ultrasound5' filename='libgazebo_ros_ray_sensor.so'>
+            <ros>
+              <namespace>distance</namespace>
+              <argument>~/out:=range6</argument>
+            </ros>
+            <output_type>sensor_msgs/Range</output_type>
+            <radiation_type>ultrasound</radiation_type>
+            <frame_name>base_laser_link_range5</frame_name>
+          </plugin>
+          <pose>-0.98 0.35 0.55 0 -0 0</pose>
+        </sensor>
+        <sensor name='base_laser_link_range6' type='ray'>
+          <always_on>1</always_on>
+          <visualize>0</visualize>
+          <update_rate>50</update_rate>
+          <ray>
+            <scan>
+              <horizontal>
+                <samples>5</samples>
+                <resolution>1</resolution>
+                <min_angle>-0.18</min_angle>
+                <max_angle>0.18</max_angle>
+              </horizontal>
+              <vertical>
+                <samples>5</samples>
+                <resolution>1</resolution>
+                <min_angle>-0.01</min_angle>
+                <max_angle>0.01</max_angle>
+              </vertical>
+            </scan>
+            <range>
+              <min>0.02</min>
+              <max>-8</max>
+              <resolution>0.01</resolution>
+            </range>
+            <noise>
+              <type>gaussian</type>
+              <mean>0</mean>
+              <stddev>0.01</stddev>
+            </noise>
+          </ray>
+          <plugin name='bytes_ultrasound6' filename='libgazebo_ros_ray_sensor.so'>
+            <ros>
+              <namespace>distance</namespace>
+              <argument>~/out:=range7</argument>
+            </ros>
+            <output_type>sensor_msgs/Range</output_type>
+            <radiation_type>ultrasound</radiation_type>
+            <frame_name>base_laser_link_range6</frame_name>
+          </plugin>
+          <pose>-0.98 0.12 0.55 0 -0 0</pose>
+        </sensor>
+        <sensor name='base_laser_link_range7' type='ray'>
+          <always_on>1</always_on>
+          <visualize>0</visualize>
+          <update_rate>50</update_rate>
+          <ray>
+            <scan>
+              <horizontal>
+                <samples>5</samples>
+                <resolution>1</resolution>
+                <min_angle>-0.18</min_angle>
+                <max_angle>0.18</max_angle>
+              </horizontal>
+              <vertical>
+                <samples>5</samples>
+                <resolution>1</resolution>
+                <min_angle>-0.01</min_angle>
+                <max_angle>0.01</max_angle>
+              </vertical>
+            </scan>
+            <range>
+              <min>0.02</min>
+              <max>-8</max>
+              <resolution>0.01</resolution>
+            </range>
+            <noise>
+              <type>gaussian</type>
+              <mean>0</mean>
+              <stddev>0.01</stddev>
+            </noise>
+          </ray>
+          <plugin name='bytes_ultrasound7' filename='libgazebo_ros_ray_sensor.so'>
+            <ros>
+              <namespace>distance</namespace>
+              <argument>~/out:=range8</argument>
+            </ros>
+            <output_type>sensor_msgs/Range</output_type>
+            <radiation_type>ultrasound</radiation_type>
+            <frame_name>base_laser_link_range7</frame_name>
+          </plugin>
+          <pose>-0.98 -0.12 0.55 0 -0 0</pose>
+        </sensor>
+        <sensor name='base_laser_link_range8' type='ray'>
+          <always_on>1</always_on>
+          <visualize>0</visualize>
+          <update_rate>50</update_rate>
+          <ray>
+            <scan>
+              <horizontal>
+                <samples>5</samples>
+                <resolution>1</resolution>
+                <min_angle>-0.18</min_angle>
+                <max_angle>0.18</max_angle>
+              </horizontal>
+              <vertical>
+                <samples>5</samples>
+                <resolution>1</resolution>
+                <min_angle>-0.01</min_angle>
+                <max_angle>0.01</max_angle>
+              </vertical>
+            </scan>
+            <range>
+              <min>0.02</min>
+              <max>10</max>
+              <resolution>0.01</resolution>
+            </range>
+            <noise>
+              <type>gaussian</type>
+              <mean>0</mean>
+              <stddev>0.01</stddev>
+            </noise>
+          </ray>
+          <plugin name='bytes_ultrasound8' filename='libgazebo_ros_ray_sensor.so'>
+            <ros>
+              <namespace>distance</namespace>
+              <argument>~/out:=range9</argument>
+            </ros>
+            <output_type>sensor_msgs/Range</output_type>
+            <radiation_type>ultrasound</radiation_type>
+            <frame_name>base_laser_link_range8</frame_name>
+          </plugin>
+          <pose>0.35 -0.52 0.55 0 0 -1.5</pose>
+        </sensor>
+        <sensor name='base_laser_link_range9' type='ray'>
+          <always_on>1</always_on>
+          <visualize>0</visualize>
+          <update_rate>50</update_rate>
+          <ray>
+            <scan>
+              <horizontal>
+                <samples>5</samples>
+                <resolution>1</resolution>
+                <min_angle>-0.18</min_angle>
+                <max_angle>0.18</max_angle>
+              </horizontal>
+              <vertical>
+                <samples>5</samples>
+                <resolution>1</resolution>
+                <min_angle>-0.01</min_angle>
+                <max_angle>0.01</max_angle>
+              </vertical>
+            </scan>
+            <range>
+              <min>0.02</min>
+              <max>10</max>
+              <resolution>0.01</resolution>
+            </range>
+            <noise>
+              <type>gaussian</type>
+              <mean>0</mean>
+              <stddev>0.01</stddev>
+            </noise>
+          </ray>
+          <plugin name='bytes_ultrasound9' filename='libgazebo_ros_ray_sensor.so'>
+            <ros>
+              <namespace>distance</namespace>
+              <argument>~/out:=range10</argument>
+            </ros>
+            <output_type>sensor_msgs/Range</output_type>
+            <radiation_type>ultrasound</radiation_type>
+            <frame_name>base_laser_link_range9</frame_name>
+          </plugin>
+          <pose>0.05 -0.52 0.55 0 0 -1.5</pose>
+        </sensor>
+        <sensor name='base_laser_link_range' type='ray'>
+          <always_on>1</always_on>
+          <visualize>0</visualize>
+          <update_rate>50</update_rate>
+          <ray>
+            <scan>
+              <horizontal>
+                <samples>5</samples>
+                <resolution>1</resolution>
+                <min_angle>-0.18</min_angle>
+                <max_angle>0.18</max_angle>
+              </horizontal>
+              <vertical>
+                <samples>5</samples>
+                <resolution>1</resolution>
+                <min_angle>-0.01</min_angle>
+                <max_angle>0.01</max_angle>
+              </vertical>
+            </scan>
+            <range>
+              <min>0.02</min>
+              <max>8</max>
+              <resolution>0.01</resolution>
+            </range>
+            <noise>
+              <type>gaussian</type>
+              <mean>0</mean>
+              <stddev>0.01</stddev>
+            </noise>
+          </ray>
+          <plugin name='bytes_ultrasound' filename='libgazebo_ros_ray_sensor.so'>
+            <ros>
+              <namespace>distance</namespace>
+              <argument>~/out:=range1</argument>
+            </ros>
+            <output_type>sensor_msgs/Range</output_type>
+            <radiation_type>ultrasound</radiation_type>
+            <frame_name>base_laser_link_range</frame_name>
+          </plugin>
+          <pose>0.75 -0.35 0.55 0 -0 0</pose>
+        </sensor>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
@@ -306,10 +1239,14 @@
         <axis>
           <xyz>0 1 0</xyz>
           <limit>
+            <effort>10000</effort>
+            <velocity>10000</velocity>
             <lower>-1e+16</lower>
             <upper>1e+16</upper>
           </limit>
           <dynamics>
+            <damping>1</damping>
+            <friction>1</friction>
             <spring_reference>0</spring_reference>
             <spring_stiffness>0</spring_stiffness>
           </dynamics>
@@ -342,7 +1279,9 @@
               <ode/>
             </contact>
             <friction>
-              <ode/>
+              <ode>
+                <mu>1</mu>
+              </ode>
               <torsional>
                 <ode/>
               </torsional>
@@ -377,10 +1316,14 @@
         <axis>
           <xyz>0 1 0</xyz>
           <limit>
+            <effort>10000</effort>
+            <velocity>10000</velocity>
             <lower>-1e+16</lower>
             <upper>1e+16</upper>
           </limit>
           <dynamics>
+            <damping>1</damping>
+            <friction>1</friction>
             <spring_reference>0</spring_reference>
             <spring_stiffness>0</spring_stiffness>
           </dynamics>
@@ -413,7 +1356,10 @@
               <ode/>
             </contact>
             <friction>
-              <ode/>
+              <ode>
+                <mu>1</mu>
+                <mu2>1</mu2>
+              </ode>
               <torsional>
                 <ode/>
               </torsional>
@@ -448,10 +1394,14 @@
         <axis>
           <xyz>0 1 0</xyz>
           <limit>
+            <effort>10000</effort>
+            <velocity>10000</velocity>
             <lower>-1e+16</lower>
             <upper>1e+16</upper>
           </limit>
           <dynamics>
+            <damping>1</damping>
+            <friction>1</friction>
             <spring_reference>0</spring_reference>
             <spring_stiffness>0</spring_stiffness>
           </dynamics>
@@ -481,10 +1431,17 @@
           </geometry>
           <surface>
             <contact>
-              <ode/>
+              <ode>
+                <kp>1e+08</kp>
+                <kd>1000</kd>
+              </ode>
             </contact>
             <friction>
-              <ode/>
+              <ode>
+                <mu>1</mu>
+                <mu2>1</mu2>
+                <fdir1>0 2 0</fdir1>
+              </ode>
               <torsional>
                 <ode/>
               </torsional>
@@ -519,10 +1476,14 @@
         <axis>
           <xyz>0 1 0</xyz>
           <limit>
+            <effort>10000</effort>
+            <velocity>10000</velocity>
             <lower>-1e+16</lower>
             <upper>1e+16</upper>
           </limit>
           <dynamics>
+            <damping>1</damping>
+            <friction>1</friction>
             <spring_reference>0</spring_reference>
             <spring_stiffness>0</spring_stiffness>
           </dynamics>
@@ -552,10 +1513,17 @@
           </geometry>
           <surface>
             <contact>
-              <ode/>
+              <ode>
+                <kp>1e+08</kp>
+                <kd>1000</kd>
+              </ode>
             </contact>
             <friction>
-              <ode/>
+              <ode>
+                <mu>1</mu>
+                <mu2>1</mu2>
+                <fdir1>0 2 0</fdir1>
+              </ode>
               <torsional>
                 <ode/>
               </torsional>
@@ -585,14 +1553,22 @@
       </link>
       <static>0</static>
       <plugin name='diff_drive_controller' filename='libgazebo_ros_diff_drive.so'>
-        <update_rate>50</update_rate>
-        <left_joint>base_right_wheel_joint</left_joint>
-        <right_joint>base_left_wheel_joint</right_joint>
-        <wheel_separation>0.60</wheel_separation>
-        <wheel_diameter>0.2</wheel_diameter>
+        <update_rate>100.0</update_rate>
+        <right_joint>base_back_right_wheel_joint</right_joint>
+        <left_joint>base_back_left_wheel_joint</left_joint>
+        <max_steer>0.6458</max_steer>
+        <max_steering_angle>7.85</max_steering_angle>
+        <max_speed>20</max_speed>
+        <left_steering_pid_gain>1500 0 1</left_steering_pid_gain>
+        <left_steering_i_range>0 0</left_steering_i_range>
+        <right_steering_pid_gain>1500 0 1</right_steering_pid_gain>
+        <right_steering_i_range>0 0</right_steering_i_range>
+        <linear_velocity_pid_gain>1000 0 1</linear_velocity_pid_gain>
+        <linear_velocity_i_range>0 0</linear_velocity_i_range>
         <publish_odom>1</publish_odom>
         <publish_odom_tf>1</publish_odom_tf>
         <publish_wheel_tf>1</publish_wheel_tf>
+        <publish_distance>1</publish_distance>
         <odometry_topic>odom</odometry_topic>
         <odometry_frame>odom</odometry_frame>
         <robot_base_frame>base_footprint</robot_base_frame>
@@ -653,76 +1629,13 @@
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
-      <pose>0.225538 2.03118 0 0 -0 0</pose>
-    </model>
-    <model name='oak_tree'>
-      <static>1</static>
-      <link name='link'>
-        <collision name='collision'>
-          <geometry>
-            <mesh>
-              <uri>model://oak_tree/meshes/oak_tree.dae</uri>
-            </mesh>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='branch'>
-          <geometry>
-            <mesh>
-              <uri>model://oak_tree/meshes/oak_tree.dae</uri>
-              <submesh>
-                <name>Branch</name>
-              </submesh>
-            </mesh>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://oak_tree/materials/scripts/</uri>
-              <uri>model://oak_tree/materials/textures/</uri>
-              <name>OakTree/Branch</name>
-            </script>
-          </material>
-        </visual>
-        <visual name='bark'>
-          <geometry>
-            <mesh>
-              <uri>model://oak_tree/meshes/oak_tree.dae</uri>
-              <submesh>
-                <name>Bark</name>
-              </submesh>
-            </mesh>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://oak_tree/materials/scripts/</uri>
-              <uri>model://oak_tree/materials/textures/</uri>
-              <name>OakTree/Bark</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <pose>38.3871 7.41054 0 0 -0 0</pose>
+      <pose>-0.881145 -1.72945 0 0 -0 0</pose>
     </model>
     <state world_name='default'>
-      <sim_time>2307 940000000</sim_time>
-      <real_time>2430 257407603</real_time>
-      <wall_time>1696333564 148729624</wall_time>
-      <iterations>2307940</iterations>
+      <sim_time>933 433000000</sim_time>
+      <real_time>1051 759433951</real_time>
+      <wall_time>1698903432 739634876</wall_time>
+      <iterations>933433</iterations>
       <model name='ground_plane'>
         <pose>0 0 0 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -734,57 +1647,47 @@
         </link>
       </model>
       <model name='heightmap'>
-        <pose>0.225538 2.03118 0 0 -0 0</pose>
+        <pose>-0.881145 -1.72945 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>0.225538 2.03118 0 0 -0 0</pose>
+          <pose>-0.881145 -1.72945 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='my_robot'>
-        <pose>0.27641 -0.810273 2.2e-05 0 3.2e-05 0.554228</pose>
+        <pose>-0.795964 -0.353939 3.9e-05 0 1e-06 0.218949</pose>
         <scale>1 1 1</scale>
         <link name='back_left_wheel_link'>
-          <pose>0.346915 -0.202133 0.20001 -1.9e-05 -1.33373 0.554246</pose>
-          <velocity>-0.000812 0.000894 0.000747 -0.004443 -0.004156 0.000425</velocity>
-          <acceleration>-2.51557 3.67176 -7.40164 -2.03105 -0.500307 0.130456</acceleration>
-          <wrench>-2.51557 3.67176 -7.40164 0 -0 0</wrench>
+          <pose>-0.529294 0.197139 0.200039 4e-06 -0.170149 0.218947</pose>
+          <velocity>-0.001123 -0.000416 0.005177 0.002057 -0.005638 0.000137</velocity>
+          <acceleration>-0.361342 -0.017545 10.3538 -1.15214 1.52636 2.93218</acceleration>
+          <wrench>-0.361342 -0.017545 10.3538 0 -0 0</wrench>
         </link>
         <link name='back_right_wheel_link'>
-          <pose>0.85215 -1.01843 0.20001 5e-05 1.31347 0.554276</pose>
-          <velocity>-0.000428 0.001094 0.010623 -0.005491 -0.002224 0.00036</velocity>
-          <acceleration>-2.2486 3.53535 23.2301 -1.88901 -1.07034 -3.13214</acceleration>
-          <wrench>-2.2486 3.53535 23.2301 0 -0 0</wrench>
+          <pose>-0.320779 -0.739943 0.200039 4e-06 0.194613 0.21895</pose>
+          <velocity>-0.000952 -0.00038 0.005164 0.001899 -0.004853 0.000341</velocity>
+          <acceleration>-0.471476 -0.045212 10.328 -1.15192 0.720703 -2.94175</acceleration>
+          <wrench>-0.471476 -0.045212 10.328 0 -0 0</wrench>
         </link>
         <link name='base_footprint'>
-          <pose>0.27641 -0.810273 2.2e-05 0 3.2e-05 0.554228</pose>
-          <velocity>0.000659 -0.001093 0.0057 -0.008697 -0.005326 0.000487</velocity>
-          <acceleration>-0.988001 1.3589 7.88759 1.3415 1.03257 -2.97488</acceleration>
-          <wrench>-5.2364 7.20215 41.8042 0 -0 0</wrench>
+          <pose>-0.795964 -0.353939 3.9e-05 0 1e-06 0.218949</pose>
+          <velocity>7.9e-05 -0.000278 0.003053 0.001232 -0.005432 0.000234</velocity>
+          <acceleration>0.288321 0.050774 6.02463 -0.963657 1.44722 -3.07934</acceleration>
+          <wrench>1.55693 0.274179 32.533 0 -0 0</wrench>
         </link>
         <link name='left_wheel_link'>
-          <pose>-0.443871 -0.69158 0.20004 -4e-06 -0.052825 0.554229</pose>
-          <velocity>-0.000484 0.000428 0.000817 -0.007406 -0.004527 0.00036</velocity>
-          <acceleration>-2.3083 3.35136 -7.38549 -2.45628 -0.643361 -2.97165</acceleration>
-          <wrench>-2.3083 3.35136 -7.38549 0 -0 0</wrench>
+          <pose>-1.43709 -0.004861 0.20004 0 -0.000147 0.218949</pose>
+          <velocity>-0.001088 -0.000676 -1e-06 0.001227 -0.005433 0.000234</velocity>
+          <acceleration>-0.387328 -0.100242 -0.00217 0.462046 1.5055 -0.015177</acceleration>
+          <wrench>-0.387328 -0.100242 -0.00217 0 -0 0</wrench>
         </link>
         <link name='right_wheel_link'>
-          <pose>0.061364 -1.50787 0.200039 1.5e-05 0.048724 0.554229</pose>
-          <velocity>-0.000309 0.000798 0.010637 -0.003969 -0.001715 0.000604</velocity>
-          <acceleration>-2.26776 3.47771 23.0647 3.00271 0.031385 0.416447</acceleration>
-          <wrench>-2.26776 3.47771 23.0647 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='oak_tree'>
-        <pose>38.3871 7.41054 0 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose>38.3871 7.41054 0 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
+          <pose>-1.22858 -0.941942 0.20004 1e-06 0.000585 0.218949</pose>
+          <velocity>-0.000871 -0.000627 -5e-06 0.001292 -0.005415 0.000233</velocity>
+          <acceleration>-0.405893 -0.102658 -0.010675 0.596753 1.55264 -0.016887</acceleration>
+          <wrench>-0.405893 -0.102658 -0.010675 0 -0 0</wrench>
         </link>
       </model>
       <light name='sun'>
@@ -793,7 +1696,7 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>-6.58988 -11.7888 3.41571 0 0.107456 0.800193</pose>
+        <pose>-6.48113 -38.879 8.99654 0 0.179456 1.21619</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>

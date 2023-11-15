@@ -1,0 +1,2 @@
+Invoking command in '/home/farog/ros2_ws/build/my_robot_bringup': /usr/bin/cmake --build /home/farog/ros2_ws/build/my_robot_bringup -- -j20 -l20
+Invoked command in '/home/farog/ros2_ws/build/my_robot_bringup' returned '2': /usr/bin/cmake --build /home/farog/ros2_ws/build/my_robot_bringup -- -j20 -l20
