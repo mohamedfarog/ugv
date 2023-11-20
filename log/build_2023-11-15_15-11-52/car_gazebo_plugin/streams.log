@@ -1,0 +1,97 @@
+[0.034s] Invoking command in '/home/farog/ros2_ws/build/car_gazebo_plugin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/farog/ros2_ws/build/car_gazebo_plugin -- -j20 -l20
+[0.058s] [33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[0.058s]   The package name passed to `find_package_handle_standard_args` (PkgConfig)
+[0.058s]   does not match the name of the calling package (gazebo).  This can lead to
+[0.058s]   problems in calling code that expects `find_package` result variables
+[0.058s]   (e.g., `_FOUND`) to follow a certain pattern.
+[0.058s] Call Stack (most recent call first):
+[0.058s]   /usr/share/cmake-3.22/Modules/FindPkgConfig.cmake:99 (find_package_handle_standard_args)
+[0.058s]   /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:72 (include)
+[0.058s]   CMakeLists.txt:9 (find_package)
+[0.058s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.058s] [0m
+[0.102s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[0.156s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[0.162s] -- Looking for ignition-math6 -- found version 6.15.0
+[0.171s] -- Searching for dependencies of ignition-math6
+[0.175s] -- Looking for OGRE...
+[0.180s] -- Found Ogre Ghadamon (1.9.0)
+[0.183s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[0.189s] -- Looking for OGRE_Paging...
+[0.189s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[0.189s] -- Looking for OGRE_Terrain...
+[0.189s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[0.189s] -- Looking for OGRE_Property...
+[0.189s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[0.189s] -- Looking for OGRE_RTShaderSystem...
+[0.189s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[0.189s] -- Looking for OGRE_Volume...
+[0.189s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[0.189s] -- Looking for OGRE_Overlay...
+[0.189s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[0.255s] -- Looking for ignition-math6 -- found version 6.15.0
+[0.256s] -- Looking for ignition-transport8 -- found version 8.2.1
+[0.256s] -- Searching for dependencies of ignition-transport8
+[0.268s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[0.274s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[0.277s] -- Checking for module 'libzmq >= 4'
+[0.287s] --   Found libzmq , version 4.3.4
+[0.305s] -- Checking for module 'uuid'
+[0.311s] --   Found uuid, version 2.37.2
+[0.332s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[0.332s] -- Searching for dependencies of ignition-msgs5
+[0.343s] -- Looking for ignition-math6 -- found version 6.15.0
+[0.346s] -- Checking for module 'tinyxml2'
+[0.353s] --   Found tinyxml2, version 9.0.0
+[0.405s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[0.407s] -- Looking for ignition-common3 -- found version 3.14.0
+[0.409s] -- Searching for dependencies of ignition-common3
+[0.409s] -- Looking for dlfcn.h - found
+[0.410s] -- Looking for libdl - found
+[0.434s] -- Searching for <ignition-common3> component [graphics]
+[0.435s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[0.435s] -- Searching for dependencies of ignition-common3-graphics
+[0.436s] -- Looking for ignition-math6 -- found version 6.15.0
+[0.438s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[0.439s] -- Searching for dependencies of ignition-fuel_tools4
+[0.462s] -- Checking for module 'jsoncpp'
+[0.469s] --   Found jsoncpp, version 1.9.5
+[0.505s] -- Checking for module 'libzip'
+[0.521s] --   Found libzip, version 1.7.3
+[0.551s] -- Looking for ignition-common3 -- found version 3.14.0
+[0.551s] -- Looking for ignition-math6 -- found version 6.15.0
+[0.552s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[0.556s] -- Found gazebo_ros: 3.7.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[0.674s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.675s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.679s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.685s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.694s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.726s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.727s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.746s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.835s] -- Gazebo version: 11.10
+[0.840s] -- Found gazebo_ros_pkgs: 3.7.0 (/opt/ros/humble/share/gazebo_ros_pkgs/cmake)
+[0.841s] -- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.919s] -- Found nav_msgs: 4.2.3 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.972s] -- Found ackermann_msgs: 2.0.2 (/opt/ros/humble/share/ackermann_msgs/cmake)
+[1.001s] -- Found tf2: 0.25.4 (/opt/ros/humble/share/tf2/cmake)
+[1.009s] -- Found tf2_ros: 0.25.4 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.227s] [31mCMake Error at CMakeLists.txt:21 (add_library):
+[1.227s]   add_library cannot create target "car_gazebo_plugin" because another target
+[1.227s]   with the same name already exists.  The existing target is a shared library
+[1.227s]   created in source directory "/home/farog/ros2_ws/src/car_gazebo_plugin".
+[1.227s]   See documentation for policy CMP0002 for more details.
+[1.227s] 
+[1.227s] [0m
+[1.229s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:77 (message):
+[1.229s]   ament_target_dependencies() the passed package name 'obstacle_avoidance'
+[1.229s]   was not found before
+[1.229s] Call Stack (most recent call first):
+[1.229s]   CMakeLists.txt:28 (ament_target_dependencies)
+[1.229s] 
+[1.229s] [0m
+[1.229s] -- Configuring incomplete, errors occurred!
+[1.229s] See also "/home/farog/ros2_ws/build/car_gazebo_plugin/CMakeFiles/CMakeOutput.log".
+[1.234s] gmake: *** [Makefile:267: cmake_check_build_system] Error 1
+[1.236s] Invoked command in '/home/farog/ros2_ws/build/car_gazebo_plugin' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/farog/ros2_ws/build/car_gazebo_plugin -- -j20 -l20

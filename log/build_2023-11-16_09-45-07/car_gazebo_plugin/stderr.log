@@ -1,0 +1,20 @@
+[33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (PkgConfig)
+  does not match the name of the calling package (gazebo).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/share/cmake-3.22/Modules/FindPkgConfig.cmake:99 (find_package_handle_standard_args)
+  /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:72 (include)
+  CMakeLists.txt:9 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[31mCMake Error at CMakeLists.txt:31 (add_executable):
+  add_executable cannot create target "car_gazebo_plugin" because another
+  target with the same name already exists.  The existing target is a shared
+  library created in source directory
+  "/home/farog/ros2_ws/src/car_gazebo_plugin".  See documentation for policy
+  CMP0002 for more details.
+
+[0m
+gmake: *** [Makefile:308: cmake_check_build_system] Error 1

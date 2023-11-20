@@ -1,0 +1,10 @@
+[0.035s] Invoking command in '/home/farog/ros2_ws/build/car_gazebo_plugin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/farog/ros2_ws/build/car_gazebo_plugin -- -j20 -l20
+[0.072s] [ 33%] [32mBuilding CXX object CMakeFiles/car_gazebo_plugin.dir/src/obstacle_avoidance.cpp.o[0m
+[0.196s] [01m[K/home/farog/ros2_ws/src/car_gazebo_plugin/src/obstacle_avoidance.cpp:5:10:[m[K [01;31m[Kfatal error: [m[Kexample_interfaces/msg/string.hpp: No such file or directory
+[0.196s]     5 | #include [01;31m[K"example_interfaces/msg/string.hpp"[m[K
+[0.196s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.196s] compilation terminated.
+[0.198s] gmake[2]: *** [CMakeFiles/car_gazebo_plugin.dir/build.make:90: CMakeFiles/car_gazebo_plugin.dir/src/obstacle_avoidance.cpp.o] Error 1
+[0.198s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/car_gazebo_plugin.dir/all] Error 2
+[0.198s] gmake: *** [Makefile:146: all] Error 2
+[0.199s] Invoked command in '/home/farog/ros2_ws/build/car_gazebo_plugin' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/farog/ros2_ws/build/car_gazebo_plugin -- -j20 -l20

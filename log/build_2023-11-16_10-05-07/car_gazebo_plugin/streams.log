@@ -1,0 +1,30 @@
+[0.035s] Invoking command in '/home/farog/ros2_ws/build/car_gazebo_plugin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/farog/ros2_ws/build/car_gazebo_plugin -- -j20 -l20
+[0.061s] [35m[1mConsolidate compiler generated dependencies of target car_gazebo_plugin[0m
+[0.079s] [ 33%] [32mBuilding CXX object CMakeFiles/car_gazebo_plugin.dir/src/obstacle_avoidance.cpp.o[0m
+[1.196s] [01m[K/home/farog/ros2_ws/src/car_gazebo_plugin/src/obstacle_avoidance.cpp:[m[K In member function ‘[01m[Kvoid ObstacleAvoidance::topic_callback(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.196s] [01m[K/home/farog/ros2_ws/src/car_gazebo_plugin/src/obstacle_avoidance.cpp:36:64:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.196s]    36 |     void topic_callback([01;35m[Kconst std_msgs::msg::String::SharedPtr msg[m[K)
+[1.196s]       |                         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[4.055s] [ 66%] [32m[1mLinking CXX shared library libcar_gazebo_plugin.so[0m
+[4.908s] [100%] Built target car_gazebo_plugin
+[4.915s] Invoked command in '/home/farog/ros2_ws/build/car_gazebo_plugin' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/farog/ros2_ws/build/car_gazebo_plugin -- -j20 -l20
+[4.929s] Invoking command in '/home/farog/ros2_ws/build/car_gazebo_plugin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/farog/ros2_ws/build/car_gazebo_plugin
+[4.933s] -- Install configuration: ""
+[4.933s] -- Installing: /home/farog/ros2_ws/install/car_gazebo_plugin/share/car_gazebo_plugin/libcar_gazebo_plugin.so
+[4.948s] -- Set runtime path of "/home/farog/ros2_ws/install/car_gazebo_plugin/share/car_gazebo_plugin/libcar_gazebo_plugin.so" to ""
+[4.949s] -- Up-to-date: /home/farog/ros2_ws/install/car_gazebo_plugin/share/ament_index/resource_index/package_run_dependencies/car_gazebo_plugin
+[4.949s] -- Up-to-date: /home/farog/ros2_ws/install/car_gazebo_plugin/share/ament_index/resource_index/parent_prefix_path/car_gazebo_plugin
+[4.949s] -- Up-to-date: /home/farog/ros2_ws/install/car_gazebo_plugin/share/car_gazebo_plugin/environment/ament_prefix_path.sh
+[4.949s] -- Up-to-date: /home/farog/ros2_ws/install/car_gazebo_plugin/share/car_gazebo_plugin/environment/ament_prefix_path.dsv
+[4.949s] -- Up-to-date: /home/farog/ros2_ws/install/car_gazebo_plugin/share/car_gazebo_plugin/environment/path.sh
+[4.949s] -- Up-to-date: /home/farog/ros2_ws/install/car_gazebo_plugin/share/car_gazebo_plugin/environment/path.dsv
+[4.949s] -- Up-to-date: /home/farog/ros2_ws/install/car_gazebo_plugin/share/car_gazebo_plugin/local_setup.bash
+[4.949s] -- Up-to-date: /home/farog/ros2_ws/install/car_gazebo_plugin/share/car_gazebo_plugin/local_setup.sh
+[4.949s] -- Up-to-date: /home/farog/ros2_ws/install/car_gazebo_plugin/share/car_gazebo_plugin/local_setup.zsh
+[4.949s] -- Up-to-date: /home/farog/ros2_ws/install/car_gazebo_plugin/share/car_gazebo_plugin/local_setup.dsv
+[4.949s] -- Installing: /home/farog/ros2_ws/install/car_gazebo_plugin/share/car_gazebo_plugin/package.dsv
+[4.949s] -- Up-to-date: /home/farog/ros2_ws/install/car_gazebo_plugin/share/ament_index/resource_index/packages/car_gazebo_plugin
+[4.949s] -- Up-to-date: /home/farog/ros2_ws/install/car_gazebo_plugin/share/car_gazebo_plugin/cmake/car_gazebo_pluginConfig.cmake
+[4.949s] -- Up-to-date: /home/farog/ros2_ws/install/car_gazebo_plugin/share/car_gazebo_plugin/cmake/car_gazebo_pluginConfig-version.cmake
+[4.949s] -- Up-to-date: /home/farog/ros2_ws/install/car_gazebo_plugin/share/car_gazebo_plugin/package.xml
+[4.950s] Invoked command in '/home/farog/ros2_ws/build/car_gazebo_plugin' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/farog/ros2_ws/build/car_gazebo_plugin

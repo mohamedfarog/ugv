@@ -1,0 +1,43 @@
+[33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (PkgConfig)
+  does not match the name of the calling package (gazebo).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/share/cmake-3.22/Modules/FindPkgConfig.cmake:99 (find_package_handle_standard_args)
+  /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:72 (include)
+  CMakeLists.txt:9 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[33mCMake Warning at CMakeLists.txt:19 (find_package):
+  By not providing "Findobstacle_avoidance.cmake" in CMAKE_MODULE_PATH this
+  project has asked CMake to find a package configuration file provided by
+  "obstacle_avoidance", but CMake did not find one.
+
+  Could not find a package configuration file provided by
+  "obstacle_avoidance" with any of the following names:
+
+    obstacle_avoidanceConfig.cmake
+    obstacle_avoidance-config.cmake
+
+  Add the installation prefix of "obstacle_avoidance" to CMAKE_PREFIX_PATH or
+  set "obstacle_avoidance_DIR" to a directory containing one of the above
+  files.  If "obstacle_avoidance" provides a separate development package or
+  SDK, be sure it has been installed.
+
+[0m
+[31mCMake Error at CMakeLists.txt:23 (add_library):
+  add_library cannot create target "car_gazebo_plugin" because another target
+  with the same name already exists.  The existing target is a shared library
+  created in source directory "/home/farog/ros2_ws/src/car_gazebo_plugin".
+  See documentation for policy CMP0002 for more details.
+
+[0m
+[31mCMake Error at /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:77 (message):
+  ament_target_dependencies() the passed package name 'obstacle_avoidance'
+  was not found before
+Call Stack (most recent call first):
+  CMakeLists.txt:30 (ament_target_dependencies)
+
+[0m
+gmake: *** [Makefile:267: cmake_check_build_system] Error 1

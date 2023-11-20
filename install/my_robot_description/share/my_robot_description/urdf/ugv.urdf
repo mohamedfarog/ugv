@@ -393,8 +393,6 @@
     <limit effort="10000" velocity="500" />
   </joint>
 
-
-
   <joint name="front_right_shock_joint" type="prismatic">
     <limit lower="0" upper="${shock_travel}" effort="100" velocity="100"/>
     <axis xyz="0 0 1"/>
@@ -447,7 +445,6 @@
     <child link="chassis_link"/>
     <origin rpy="0 0 0" xyz="${wheelbase_length/2} 0 ${chassis_height/2 + chassis_elevation}"/>
   </joint>
-
 
   <gazebo reference="front_left_wheel">
     <mu1>${wheel_friction}</mu1>

@@ -10,6 +10,7 @@ find_package(gazebo REQUIRED)
 find_package(gazebo_ros REQUIRED)
 find_package(gazebo_ros_pkgs REQUIRED)
 find_package(rclcpp REQUIRED)
+find_package(std_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
@@ -18,6 +19,17 @@ find_package(tf2 REQUIRED)
 find_package(tf2_ros REQUIRED)
 
 add_library(car_gazebo_plugin SHARED src/car_gazebo_plugin.cpp)
+
+# add_executable(cpp_node src/car_gazebo_plugin.cpp)
+# ament_target_dependencies(cpp_node rclcpp) 
+
+
+# add_executable(car_gazebo_plugin src/obstacle_avoidance.cpp)
+# ament_target_dependencies(car_gazebo_plugin rclcpp std_msgs)
+
+
+
+
 
 target_include_directories(car_gazebo_plugin PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>

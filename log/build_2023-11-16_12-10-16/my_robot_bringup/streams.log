@@ -1,0 +1,9 @@
+[0.034s] Invoking command in '/home/farog/ros2_ws/build/my_robot_bringup': CMAKE_PREFIX_PATH=/home/farog/ros2_ws/install/my_robot_description:/home/farog/ros2_ws/install/turtlebot3_simulations:/home/farog/ros2_ws/install/turtlebot3_gazebo:/home/farog/ros2_ws/install/turtlebot3_fake_node:/home/farog/ros2_ws/install/my_robot_bringup:/home/farog/ros2_ws/install/car_gazebo_plugin:/opt/ros/humble /usr/bin/cmake --build /home/farog/ros2_ws/build/my_robot_bringup -- -j20 -l20
+[0.047s] [31mCMake Error at CMakeLists.txt:9 (ament_target_dependencies):
+[0.047s]   Unknown CMake command "ament_target_dependencies".
+[0.047s] 
+[0.047s] [0m
+[0.047s] -- Configuring incomplete, errors occurred!
+[0.047s] See also "/home/farog/ros2_ws/build/my_robot_bringup/CMakeFiles/CMakeOutput.log".
+[0.048s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
+[0.066s] Invoked command in '/home/farog/ros2_ws/build/my_robot_bringup' returned '2': CMAKE_PREFIX_PATH=/home/farog/ros2_ws/install/my_robot_description:/home/farog/ros2_ws/install/turtlebot3_simulations:/home/farog/ros2_ws/install/turtlebot3_gazebo:/home/farog/ros2_ws/install/turtlebot3_fake_node:/home/farog/ros2_ws/install/my_robot_bringup:/home/farog/ros2_ws/install/car_gazebo_plugin:/opt/ros/humble /usr/bin/cmake --build /home/farog/ros2_ws/build/my_robot_bringup -- -j20 -l20

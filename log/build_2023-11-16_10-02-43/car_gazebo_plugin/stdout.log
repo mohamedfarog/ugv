@@ -1,0 +1,3 @@
+[35m[1mConsolidate compiler generated dependencies of target car_gazebo_plugin[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/car_gazebo_plugin.dir/src/car_gazebo_plugin.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/car_gazebo_plugin.dir/src/obstacle_avoidance.cpp.o[0m

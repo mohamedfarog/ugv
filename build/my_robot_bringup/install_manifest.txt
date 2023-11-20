@@ -14,6 +14,7 @@
 /home/farog/ros2_ws/install/my_robot_bringup/share/my_robot_bringup//worlds/nav2.world
 /home/farog/ros2_ws/install/my_robot_bringup/share/my_robot_bringup//worlds/my_world.world
 /home/farog/ros2_ws/install/my_robot_bringup/share/my_robot_bringup//worlds/nav3.world
+/home/farog/ros2_ws/install/my_robot_bringup/share/my_robot_bringup//worlds/deaert1.world
 /home/farog/ros2_ws/install/my_robot_bringup/share/my_robot_bringup//config/nav2_params.yaml
 /home/farog/ros2_ws/install/my_robot_bringup/share/my_robot_bringup//config/red-crash.rviz
 /home/farog/ros2_ws/install/my_robot_bringup/share/my_robot_bringup//config/ekf.yaml

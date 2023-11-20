@@ -160,7 +160,6 @@ controller_server:
       use_rotate_to_heading: false
       use_velocity_scaled_lookahead_dist: false
 
-    
       
 controller_server_rclcpp_node:
   ros__parameters:
@@ -381,7 +380,6 @@ robot_state_publisher:
   ros__parameters:
     use_sim_time: False
 
-
 velocity_smoother:
   ros__parameters:
     # smoothing_frequency: 20.0
@@ -403,8 +401,6 @@ slam_toolbox:
     map_update_interval: 1.0
     loop_search_maximum_distance: 0.5
     
-
-
 waypoint_follower:
   ros__parameters:
     loop_rate: 20

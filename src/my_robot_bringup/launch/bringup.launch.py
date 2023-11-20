@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 import os
-import signal
 
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
@@ -110,7 +109,18 @@ def generate_launch_description():
     get_package_share_directory('my_robot_bringup'),
     'maps',
     'map1.yaml'
-)
+    
+    )
+
+    # obstacle_avoidance = Node(
+    #     package='my_robot_bringup',
+    #     executable='src/obstacle_avoidance',
+    #     output='screen',
+    #     remappings=[
+    #         ('laser_scan', '/dolly/laser_scan'),
+    #         ('cmd_vel', '/dolly/cmd_vel'),
+    #     ])
+    
     map_server_cmd = Node(
     package='nav2_map_server',
     executable='map_server',
@@ -120,6 +130,8 @@ def generate_launch_description():
     lifecycle_nodes = ['map_server']
     use_sim_time = True
     autostart = True
+
+   
 
 
     start_lifecycle_manager_cmd = Node(
@@ -131,6 +143,9 @@ def generate_launch_description():
         parameters=[{'use_sim_time': use_sim_time},
                     {'autostart': autostart},
                     {'node_names': lifecycle_nodes}])
+    
+
+    
 
 
     ld = LaunchDescription()
@@ -149,6 +164,7 @@ def generate_launch_description():
     ld.add_action(car)
     ld.add_action(joy)
     ld.add_action(teleop_twist)
+
     # ld.add_action(nav_bringup_cmd)
     ld.add_action(declare_use_sim_time_cmd)
 
